@@ -93,7 +93,8 @@ class MainBlock extends Component {
     }
     handleInput(e) {
         this.setState({
-                searchLine: e.target.value.toLowerCase()
+                searchLine: e.target.value.toLowerCase(),
+                pageNumber: 1,
             }, () => this.modernWritesList()
         )
     }
