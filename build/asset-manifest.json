@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/ds-test-react/static/css/main.95ba96fd.chunk.css",
+    "main.js": "/ds-test-react/static/js/main.cedc3bb6.chunk.js",
+    "main.js.map": "/ds-test-react/static/js/main.cedc3bb6.chunk.js.map",
+    "runtime-main.js": "/ds-test-react/static/js/runtime-main.5dc62e65.js",
+    "runtime-main.js.map": "/ds-test-react/static/js/runtime-main.5dc62e65.js.map",
+    "static/js/2.f7c05639.chunk.js": "/ds-test-react/static/js/2.f7c05639.chunk.js",
+    "static/js/2.f7c05639.chunk.js.map": "/ds-test-react/static/js/2.f7c05639.chunk.js.map",
+    "static/js/3.1769bd2b.chunk.js": "/ds-test-react/static/js/3.1769bd2b.chunk.js",
+    "static/js/3.1769bd2b.chunk.js.map": "/ds-test-react/static/js/3.1769bd2b.chunk.js.map",
+    "index.html": "/ds-test-react/index.html",
+    "static/css/main.95ba96fd.chunk.css.map": "/ds-test-react/static/css/main.95ba96fd.chunk.css.map",
+    "static/js/2.f7c05639.chunk.js.LICENSE.txt": "/ds-test-react/static/js/2.f7c05639.chunk.js.LICENSE.txt",
+    "static/media/Writer.scss": "/ds-test-react/static/media/3rd.131d1c6a.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5dc62e65.js",
+    "static/js/2.f7c05639.chunk.js",
+    "static/css/main.95ba96fd.chunk.css",
+    "static/js/main.cedc3bb6.chunk.js"
+  ]
+}
