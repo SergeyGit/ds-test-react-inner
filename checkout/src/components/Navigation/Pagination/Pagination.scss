@@ -1,0 +1,107 @@
+@import "../../../vars";
+.Layout {
+  margin-top: 52px;
+}
+.naming {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  @media only screen and (max-width: 991px){
+    margin-top: 16px;
+    .caption {
+      margin-bottom: 16px;
+      //font-size: 30px;
+    }
+  }
+}
+.breadcrumbs {
+  margin: 0 0 12px;
+  padding-top: 12px;
+  &.mob {
+    display: none;
+  }
+  .breadcrumb {
+    font-size: 12px;
+    line-height: 12px;
+    ol, ul {
+      margin: 0;
+    }
+    a {
+      text-decoration: none;
+      color:  #5A5C5D;
+      font-size: 11px;
+      line-height: 11px;
+      font-weight: 400;
+      &:hover {
+        text-decoration: none;
+        color: $dark;
+      }
+    }
+    span {
+      color:  $dark;
+      font-size: 11px;
+      line-height: 11px;
+      + span:before {
+        font-family: "icomoon";
+        content: $icon-angle-arrow-down;
+        display: inline-block;
+        transform: rotate(-90deg);
+        font-weight: 700;
+        padding: 1px 5px;
+        vertical-align: top;
+        font-size: 6px;
+      }
+      &:first-child {
+        a {
+          color: $blue;
+          font-size: 0;
+          &:before {
+            font-family: "icomoon";
+            content: $icon-home;
+            font-size: 12px;
+            font-weight: bold;
+          }
+        }
+
+      }
+    }
+  }
+}
+.for-breadcrumbs-sec {
+  margin-bottom: 0;
+  //padding-bottom: 0;
+  @media only screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .breadcrumbs {
+    display: none;
+    &.mob {
+      display: block;
+      margin-top: 30px;
+      margin-bottom: 0;
+      .breadcrumb {
+        line-height: 1.5;
+      }
+    }
+  }
+}
+
+.card {
+  .breadcrumbs {
+    margin: 0 0 20px 0;
+    padding-left: 20px;
+    max-width: 100%;
+    line-height: 12px;
+  }
+  .breadcrumb {
+    display: inline-block;
+    vertical-align: top;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding-right: 40px;
+    max-width: 100%;
+  }
+}

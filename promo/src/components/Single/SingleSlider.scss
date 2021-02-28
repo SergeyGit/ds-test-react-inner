@@ -1,0 +1,296 @@
+.Single_slider {
+  //margin-top: 30px;
+  margin-bottom: -20px;
+
+  margin-left: -10px;
+  margin-right: -10px;
+  @media (max-width: 767px) {
+    margin-bottom: 0;
+  }
+
+  .slick-list {
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+  }
+  .slick-track {
+    margin-left: 0;
+  }
+  .slick-arrow {
+    top: 35%;
+    z-index: 10;
+    transform: rotate(-90deg);
+    &.slick-next {
+      right: -5px;
+      left: auto;
+      &:before, &:after {
+        margin-bottom: -2px;
+      }
+    }
+    &.slick-prev {
+      left: -5px;
+    }
+  }
+  .PromoCard {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 0;
+    &_direct {
+      font-size: 13px;
+    }
+    &_content {
+      width: 100%;
+      margin-top: auto;
+      padding: 0;
+    }
+    &_container{
+      padding: 16px;
+      flex-direction: column;
+      min-height: 208px;
+      box-shadow: 0px 2px 10px rgba(128, 142, 184, 0.2);
+      //width: 372px;
+      //justify-content: space-between;
+    }
+    &_tittle {
+      max-width: 450px;
+      margin-top: 15px;
+      height: 54px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    &_clinics_slider_card {
+      &_flex-line {
+        margin-top: 15px;
+        display: flex;
+        width: 100%;
+        align-items: center;
+        //margin-bottom: 15px;
+      }
+      &_price {
+        display: inline-flex;
+        margin-left: auto;
+        margin-top: auto;
+        .free {
+          font-size: 16px;
+        }
+        &_main {
+          font-size: 16px;
+        }
+        &_old {
+          font-size: 13px;
+        }
+        span {
+          font-size: 13px;
+        }
+      }
+      &_button {
+        margin-top: 0;
+        //margin-left: 20px;
+        margin-right: 0;
+        margin-left: auto;
+        width: 135px;
+      }
+    }
+
+    &_timer{
+      line-height: 20px;
+      &_point {
+        //padding-right: 26px;
+        padding-left: 10px;
+        padding-right: 10px;
+        &>div:first-child {
+          display: none;
+        }
+      }
+      &_point_cont {
+        font-size: 13px;
+        margin-top: 0;
+        time {
+          width: 70px;
+          line-height: 20px;
+        }
+        &_day {
+          //display: none;
+          white-space: nowrap;
+          margin-right: 12px;
+          span {
+            font-size: 11px;
+          }
+          &:after {
+            top: 1px;
+            right: -6px;
+          }
+        }
+      }
+      &_sale {
+        //display: inline-flex;
+        //align-items: center;
+        //padding-left: 12px;
+        //border-bottom-right-radius: 20px;
+        min-width: 40px;
+        flex-shrink: 0;
+        &_percent {
+          font-size: 13px;
+          margin-top: 0;
+        }
+        &_free {
+          margin-top: 0;
+          margin-left: auto;
+          margin-right: auto;
+          width: 20px;
+        }
+      }
+    }
+    @media (max-width: 1200px) {
+      box-shadow: none;
+      border: none;
+      padding-top: 0;
+      width: 372px !important;
+      &_container{
+        box-shadow: 2px 2px 20px rgba(133, 139, 152, 0.25);
+        min-height: 210px;
+      }
+      &_clinics_slider_card {
+        &_price {
+          order: 0;
+          width: auto;
+          margin-bottom: 0;
+          margin-right: auto;
+          .free {
+            font-size: 18px;
+          }
+          &_main {
+            font-size: 24px;
+          }
+          &_old {
+            font-size: 18px;
+          }
+
+          span {
+            font-size: 18px;
+          }
+        }
+        &_button {
+          width: 100%;
+          max-width: 100%;
+        }
+      }
+      &_timer {
+        display: none;
+        &_point {
+          &_cnt {
+            time {
+              line-height: 20px;
+            }
+
+          }
+        }
+      }
+    }
+
+    @media (max-width: 767px) {
+      width: 319px !important;
+      //&_clinics_slider_card {
+      //  //&_price {
+      //  //  .free {
+      //  //    font-size: 18px;
+      //  //  }
+      //  //}
+      //  //&_button {
+      //  //  width: 105px;
+      //  //  font-weight: 400;
+      //  //  line-height: 36px;
+      //  //}
+      //}
+      &_container{
+        min-height: 200px;
+      }
+      &_clinics_slider_card {
+        &_price {
+          display: none;
+          &_old {
+            font-size: 13px;
+          }
+          &_main {
+            font-size: 16px;
+          }
+        }
+        &_flex-line {
+          margin-top: 0;
+        }
+      }
+      &_content {
+        flex-direction: row;
+      }
+      &_timer {
+        &_sale {
+          padding: 8px 5px;
+          font-size: 13px;
+        }
+        &_point {
+          padding: 8px 5px;
+          &_cont {
+            font-size: 13px;
+            time {
+              width: 70px;
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 360px) {
+      width: 290px !important;
+      //padding-left: 0;
+      //padding-right: 15px;
+      &_container {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+      &_tittle {
+        max-width: 280px;
+      }
+
+    }
+  }
+  .slick-dots {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex !important;
+    justify-content: center;
+    width: 100%;
+    button {
+      font-size: 0;
+      background-color: transparent;
+      padding: 0;
+      border: none;
+      width: 100%;
+      height: 100%;
+    }
+    li {
+      width: 6px;
+      height: 6px;
+      margin-right: 8px;
+      margin-left: 8px;
+      overflow: hidden;
+      border: 0;
+      border-radius: 50%;
+      background-color: #D4E2F4;
+      cursor: pointer;
+      @media (max-width: 639px) {
+        margin-left: 4px;
+        margin-right: 4px;
+      }
+      &.slick-active {
+        background-color: #0957C3;
+      }
+    }
+  }
+  //@media (max-width: 360px) {
+  //  max-height: 210px;
+  //  .slick-track {
+  //    max-height: 210px;
+  //  }
+  //}
+
+}

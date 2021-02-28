@@ -1,0 +1,63 @@
+input, textarea {
+  background: #FFFFFF;
+  border: 1px solid #e8e8e8;
+  border-radius: 8px;
+  outline: none;
+  color: #333536;
+  font-size: 13px;
+  padding: 0 15px;
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  &:-webkit-autofill, &:-webkit-autofill:hover,
+  &:-webkit-autofill:focus,
+  &:focus:required:invalid {
+
+    -webkit-box-shadow: none;
+    transition: background-color 5000s ease-in-out 0s;
+    background-color: white;
+  }
+  &:required:valid {
+    border-color: green;
+  }
+}
+input {
+  line-height: 38px;
+}
+
+button, select {
+  cursor: pointer;
+  border-style: solid;
+  &:focus, &:active {
+    outline: none;
+  }
+}
+
+textarea {
+  resize: none;
+  //padding-top: 20px;
+  padding-top: 0;
+
+}
+button, .consultation {
+  background: #FFFFFF;
+  border-radius: 35px;
+  color: #333536 !important;
+  padding: 12px 15px;
+  border: 1px solid white;
+  margin-left: 15px;
+  transition: .4s;
+  &:hover {
+    background-color: #698AFF;
+    color: white ;
+    border-color: #698AFF;
+  }
+}
+.consultation {
+  &:hover {
+    color: #1459B8 !important;
+    background-color: #fff;
+    border-color: white;
+  }
+}

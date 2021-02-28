@@ -1,0 +1,208 @@
+.FiveSection {
+  position: relative;
+  background-color: #F8FAFC;
+  border-radius: 20px;
+  margin-left: 40px;
+  margin-right: 40px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  @media only screen and (max-width: 1400px) {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  @media only screen and (max-width: 1199px)  {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  @media  only screen and (max-width: 991px) {
+    margin-bottom: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  &_info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 120px;
+    overflow-x: auto;
+    @media (max-width:991px) {
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+    @media (max-width:767px) {
+      flex-direction: column;
+      margin-top: 0;
+    }
+    &_point {
+      //text-align: center;
+      width: 250px;
+      min-width: 250px;
+      @media (max-width:991px) {
+        margin-right: 35px;
+      }
+      @media (max-width:767px) {
+        margin-right: 0;
+        margin-top: 30px;
+        width: 100%;
+      }
+      &_emoji {
+        font-size: 30px;
+      }
+      &_text {
+        margin-top: 25px;
+        line-height: 1.5;
+        @media (max-width:991px) {
+          margin-top: 15px;
+        }
+      }
+      img {
+        height: 150px;
+      }
+    }
+  }
+  &_slider {
+    margin-top: 40px;
+    padding-bottom: 34px;
+    &_sec {
+      position: relative;
+      margin-bottom: 100px;
+      @media (max-width: 991px) {
+        margin-bottom: 40px;
+      }
+      .slick-list {
+        overflow: visible;
+      }
+      .slick {
+        &-prev, &-next {
+          background-image: url(../../../img/otziv-arr.svg);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-color: white;
+          width: 17px;
+          height: 17px;
+          background-size: 17px;
+          font-size: 0;
+          border: none;
+          box-shadow: none;
+          bottom: 0;
+          position: absolute;
+          top: 100%;
+          vertical-align: top;
+          opacity: .2;
+          transition: .4s;
+          &:hover {
+            opacity: 1;
+          }
+        }
+        &-prev {
+          transform: rotate(180deg);
+          left: 46%;
+        }
+        &-next {
+          right: 45%;
+          @media (max-width: 1200px) {
+            right: 44%;
+          }
+        }
+      }
+      .slick-prev {
+        display: block !important;
+        font-size: 0;
+      }
+      .slick-track {
+        display: flex;
+      }
+      .slick-slide {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+    }
+    &_point {
+      box-shadow: 0 0 10px rgba(38, 91, 195, 0.12);
+      border-radius: 8px;
+      padding: 30px 30px 20px;
+      width: 570px !important;
+      line-height: 1.5;
+      height: 230px;
+      display: inline-flex !important;
+      flex-direction: column;
+      background: #FFFFFF url(../../../img/otziv-bg.svg) no-repeat 95% 0 ;
+      cursor: pointer;
+      &_stars {
+        width: 68px;
+        margin-bottom: 17px;
+      }
+      &_people {
+        display: flex;
+        margin-top: auto;
+        width: 100%;
+        align-items: center;
+        &_ava {
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          margin-right: 20px;
+        }
+        &_info {
+          width: 100%;
+          &_name {
+            font-weight: bold;
+            &_age {
+              font-weight: 400;
+            }
+          }
+          &_link {
+            font-size: 12px;
+            color: #64AFF5;
+            display: block;
+            &:hover {
+              color: black;
+            }
+          }
+        }
+        &_date {
+          font-size: 12px;
+          line-height: 1.5;
+          color: #9E9E9E;
+          white-space: pre;
+          margin-top: auto;
+        }
+      }
+    }
+    &_finger {
+      position: absolute;
+      width: 38px;
+      left: 49.5%;
+      top: 99%;
+    }
+
+
+    @media (max-width: 991px) {
+      margin-top: 20px;
+      padding-bottom: 0;
+      &_finger {
+        display: none;
+      }
+    }
+    @media (max-width:767px) {
+      margin-top: 20px;
+    }
+    @media (max-width:610px) {
+      &_point {
+        width: 330px !important;
+        height: 280px;
+      }
+    }
+    @media (max-width:340px) {
+      &_point {
+        width: 290px !important;
+        height: 300px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 20px;
+        &_people_date {
+          display: none;
+        }
+      }
+    }
+  }
+}

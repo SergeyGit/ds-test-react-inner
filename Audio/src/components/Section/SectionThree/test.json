@@ -1,0 +1,37 @@
+[
+{
+img: require("../../../img/doc.jpg"),
+name: "Бондаренко",
+nameOther: "Наталья Юрьевна",
+position: "Дежурный терапевт",
+cat: "Врач высшей категории",
+year: "24",
+link: "doc.ua",
+price: [
+69, 119, 149
+]
+,            },
+{
+img: "test",
+name: "22222222222",
+nameOther: "2222222",
+position: "222222",
+cat: "2222222",
+year: "5",
+link: "doc.ua",
+price: [
+62, 112, 142
+]
+},
+{
+img: "test",
+name: "333333333",
+nameOther: "33333",
+position: "3333333",
+cat: "3333333333",
+year: "3",
+link: "doc.ua",
+price: [
+63, 113, 143
+]'
+

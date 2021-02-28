@@ -1,0 +1,38 @@
+{
+  "doctors": [
+    {
+      "id": 12,
+      "img": "https://doc.ua/api/image/image/6426/230/300",
+      "name": "Сулик",
+      "nameOther": "Роман Владимирович",
+      "fullName": "",
+      "position": [
+        "Рефлексотерапевт",
+        "Невролог"
+      ],
+      "category": 4,
+      "academic_title": null,
+      "categoryAcademicTitle": "",
+      "price": [
+        {
+          "duration": 10,
+          "price": 1
+        },
+        {
+          "duration": 20,
+          "price": 100
+        },
+        {
+          "duration": 20,
+          "price": 100
+        }
+      ],
+      "minPrice": 0,
+      "link": "/doctor/kiev/roman-sulik",
+      "year": 14,
+      "alias": "roman-sulik",
+      "media": 6426
+    }
+  ],
+  "status": true
+}

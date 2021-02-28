@@ -1,0 +1,57 @@
+input, textarea {
+  border: 1px solid #E8E8E8;
+  box-sizing: border-box;
+  border-radius: 8px;
+  outline: none;
+  color: #333536;
+  font-size: 13px;
+  padding: 0 15px;
+  width: 100%;
+  &:focus:required:invalid {
+    border-color: red;
+  }
+  &:required:valid {
+    border-color: green;
+  }
+}
+input {
+  line-height: 38px;
+}
+button, select {
+  cursor: pointer;
+  border-style: solid;
+  &:focus, &:active {
+    outline: none;
+  }
+}
+
+textarea {
+  resize: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  &::placeholder {
+    color: #707272;
+    font-size: 13px;
+  }
+}
+button {
+  background: #0957C3;
+  border-radius: 8px;
+  border: 1px solid #0957C3;
+  color: white;
+  padding: 0;
+  line-height: 38px;
+  transition: .4s;
+  display: block;
+  font-size: 13px;
+  &:hover {
+    background-color: #064CAD;
+    color: white;
+    border-color: #064CAD;
+  }
+}
+.consultation {
+  &:hover {
+    border-color: white;
+  }
+}

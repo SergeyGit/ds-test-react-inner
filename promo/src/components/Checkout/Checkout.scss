@@ -1,0 +1,514 @@
+.Checkout {
+  margin-top: 15px;
+  position: relative;
+  z-index: 2;
+  &_cnt {
+    max-width: 762px;
+  }
+  &_caption {
+    font-size: 32px;
+    margin-bottom: 20px;
+    @media only screen and (max-width: 991px) {
+      font-size: 24px;
+    }
+  }
+  &_point {
+    box-shadow: 2px 2px 15px rgba(128, 142, 184, 0.1);
+    border-radius: 8px;
+    margin-top: 10px;
+    padding: 20px 30px 30px;
+    background-color: #fff;
+    @media only screen and (max-width: 767px) {
+      padding: 15px;
+      margin-left: -2%;
+      margin-right: -2%;
+    }
+    &_caption {
+      padding-bottom: 10px;
+      border-bottom: 1px solid #EBEFF6;
+    }
+    &_service {
+      display: flex;
+      align-items: center;
+      padding: 15px;
+      border: 1px solid #EBEFF6;
+      margin-top: 15px;
+      &_price {
+        margin-left: auto;
+        margin-right: 15px;
+        white-space: nowrap;
+      }
+    }
+    &_date {
+      &_caption {
+        display: flex;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        align-items: center;
+      }
+      &_icon {
+        display: inline-block;
+        width: 32px;
+        margin-right: 16px;
+        //margin-left: auto;
+      }
+      &_day {
+        display: flex;
+        overflow: auto;
+        &_point {
+          width: 90px;
+          height: 60px;
+          padding-top: 12px;
+          flex-shrink: 0;
+          text-align: center;
+          background-color: #F9FAFB;
+          border-radius: 4px;
+          font-size: 12px;
+          line-height: 1.5;
+          margin-right: 12px;
+          text-transform: capitalize;
+          &.active {
+            background-color: #3EBFAC;
+            color: white;
+          }
+        }
+      }
+      &_time {
+        &_point {
+          display: inline-block;
+          margin-right: 10px;
+          margin-bottom: 10px;
+          cursor: pointer;
+          width: 68px;
+          text-align: center;
+          font-weight: 500;
+          padding: 8px;
+          background-color: rgba(62, 191, 172, 0.1);
+          color: #3EBFAC;
+          border-radius: 20px;
+          &.active {
+            color: white;
+            background-color: #3EBFAC;
+          }
+        }
+      }
+    }
+    &_promo {
+      margin-top: 15px;
+      background-color: #F4F7FA;
+      border-radius: 8px;
+      padding: 15px ;
+      @media only screen and (max-width: 767px) {
+        display: none;
+      }
+      &_line {
+        display: flex;
+        align-items: center;
+
+        &_price {
+          margin-left: auto;
+        }
+        &.last {
+          border-top: 1px dashed #939698;
+          margin-top: 15px;
+          padding-top: 15px;
+        }
+      }
+    }
+    &_line {
+      display: flex;
+      align-items: flex-end;
+      margin-top: 20px;
+      @media (max-width: 767px) {
+        margin-top: 10px;
+      }
+      @media (max-width: 400px) {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+    .PromoCard_timer {
+      margin-top: 0;
+      margin-left: 0;
+    }
+    .PromoCard_tittle {
+      margin-top: 0;
+      padding-right: 15px;
+      @media (max-width: 767px) {
+        padding-right: 0;
+      }
+      //margin-bottom: 15px;
+    }
+    .PromoCard_clinics_slider_card_price {
+      margin-top: 0;
+      margin-left: auto;
+      white-space: nowrap;
+      margin-bottom: 0;
+      &_old {
+        font-size: 16px;
+        line-height: 1;
+        @media (max-width: 639px) {
+          display: none;
+        }
+      }
+      &_main {
+        font-size: 16px;
+      }
+      span {
+        font-size: 13px;
+        line-height: 16px;
+      }
+      @media (max-width: 1200px) {
+        width: auto;
+      }
+      @media (max-width: 767px) {
+        margin-left: 0;
+        //margin-top: 15px;
+      }
+      @media (max-width: 400px) {
+        margin-top: 15px;
+      }
+    }
+    .doctor {
+      padding: 0;
+      box-shadow: none;
+      &_ava {
+        width: 65px;
+        height: 65px;
+      }
+    }
+  }
+  &_form {
+    margin-top: 5px;
+    margin-left: -10px;
+    margin-right: -10px;
+    font-size: 13px;
+    &_point {
+      padding-left: 10px;
+      padding-right: 10px;
+      width: 50%;
+      display: inline-block;
+      margin-top: 15px;
+      &_label {
+        margin-bottom: 8px;
+        color: #707272;
+      }
+      &_input {
+        position: relative;
+        &.require {
+          &:after {
+            content: '*';
+            color: #FF5D5D;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+          }
+        }
+        &.err {
+          &>input {
+            border-color: #FEA780;
+          }
+        }
+      }
+      //input {
+      //  color: #333536;
+      //}
+      @media (max-width: 767px) {
+        width: 100%;
+
+      }
+    }
+    .react-datepicker-wrapper {
+      width: 100%;
+    }
+  }
+  &_textar {
+    margin-top: 15px;
+  }
+  &_name {
+    display: flex;
+    align-items: center;
+    padding-bottom: 15px;
+    justify-content: space-between;
+    border-bottom: 1px solid #EBEFF6;
+    @media only screen and (max-width: 767px) {
+      line-height: 1.2;
+      padding-bottom: 12px;
+    }
+  }
+  &_icon {
+    display: inline-block;
+    width: 22px;
+    //margin-left: auto;
+  }
+  &_show-text {
+    color: #0957C3;
+    position: relative;
+    padding-right: 12px;
+    cursor: pointer;
+    display: inline-block;
+    &:before {
+      content: '';
+      height: 8px;
+      width: 2px;
+      display: inline-block;
+      border-radius: 1px;
+      background-color: #0957C3;
+      position: absolute;
+      right: 3px;
+      top: 3px;
+    }
+    &:after {
+      content: '';
+      height: 2px;
+      width: 8px;
+      display: inline-block;
+      border-radius: 1px;
+      background-color: #0957C3;
+      position: absolute;
+      right: 0;
+      top: 6px;
+    }
+  }
+
+  .DoctorCard_content {
+    &_about {
+      padding: 15px 0 0;
+      &_ava {
+        width: 66px;
+        height: 90px;
+      }
+    }
+    &_clinics {
+      &_point {
+        margin-top: 15px;
+        padding: 18px 15px 15px;
+        border: 1px solid #EBEFF6;
+        border-radius: 4px;
+        &_info_locate {
+          max-width: 20%;
+          &:first-child {
+            max-width: 60%;
+          }
+          @media only screen and (max-width: 767px) {
+            max-width: 100%;
+
+            &:first-child {
+              max-width: 100%;
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  &_rule {
+    margin-top: 40px;
+    text-align: center;
+    a {
+      text-decoration-line: underline;
+      color: #0957C3;
+    }
+    @media only screen and (max-width: 767px) {
+      text-align: left;
+      margin-top: 20px;
+    }
+  }
+  &_submit {
+    margin-left: auto;
+    margin-right: auto;
+    width: 170px;
+    &_cnt {
+      width: 100%;
+      margin-top: 20px;
+      &.main {
+        position: relative;
+        background-color: transparent;
+        border-top: none;
+      }
+    }
+    &:disabled {
+      opacity: .7;
+    }
+    @media only screen and (max-width: 767px) {
+      margin-left: 0;
+      margin-right: 0;
+      width: 100%;
+      &_cnt {
+        display: flex;
+        background-color: #fff;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        z-index: 120;
+        padding: 20px 16px;
+        border-top: 1px solid rgba(33, 58, 133, 0.07);
+        border-radius: 4px 4px 0px 0px;
+        box-shadow: 0px -4px 15px rgba(128, 142, 184, 0.2);
+        min-height: 80px;
+      }
+    }
+  }
+  .PhoneInput {
+    border: 1px solid #E8E8E8;
+    border-radius: 8px;
+    input {
+      border: 0 solid white;
+      border-radius: 0 8px 8px 0;
+      border-left: 1px solid #E8E8E8;
+    }
+    &Country {
+      margin-right: 0;
+      padding-right: 8px;
+      padding-left: 10px;
+      &Icon {
+        //width: 16px;
+        //height: 10px;
+        box-shadow: none;
+      }
+    }
+
+  }
+  .PhoneInputCountrySelect:focus + .PhoneInputCountryIcon--border {
+    box-shadow: none;
+  }
+}
+.Form_promo {
+  &_point {
+    &_input {
+      background: #FFFFFF;
+      //box-shadow: 0px 0px 20px rgba(38, 91, 195, 0.12);
+      border-radius: 4px;
+      border: 1px solid white;
+      display: inline-flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 15px;
+      width: 260px;
+      //margin-top: 7px;
+      margin-left: 20px;
+      margin-right: 20px;
+      transition: .4s;
+      position: relative;
+      @media only screen and (max-width: 767px) {
+        width: 100%;
+        margin: 10px 0 15px;
+      }
+
+      &_ok {
+        display: none;
+      }
+
+      &_button {
+        color: #0957C3;
+        font-weight: 500;
+        cursor: pointer;
+
+        &_clear {
+          display: none;
+          cursor: pointer;
+        }
+      }
+
+      &.active {
+        .Form_promo_point_input_button {
+          display: none;
+        }
+
+        .Form_promo_point_input_ok {
+          display: block;
+        }
+      }
+
+      &.error {
+        border-color: #FEA780;
+
+        .error-text {
+          display: block;
+        }
+
+        .Form_promo_point_input_button {
+          display: none;
+        }
+
+        .Form_promo_point_input_button_clear {
+          display: block;
+        }
+      }
+      input {
+        margin-bottom: 0;
+        padding: 0;
+        border: none;
+        width: 100%;
+        margin-left: 10px;
+
+      }
+    }
+  }
+
+}
+.err {
+  .PhoneInput {
+    border-color: #FEA780;
+  }
+}
+.error-text {
+  font-size: 11px;
+  position: absolute;
+  left: 0;
+  bottom: -14px;
+  color: #FE5000;
+  display: none;
+}
+.radio {
+  display: inline-block;
+  margin-right: 30px;
+  cursor: pointer;
+  @media only screen and (max-width: 767px) {
+    width: 100%;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+  &-label {
+    @media only screen and (max-width: 767px) {
+      width: 90%;
+    }
+  }
+  &_check {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: #FFFFFF;
+    border: 1px solid #C2C2C2;
+    border-radius: 4px;
+    text-align: center;
+    margin-right: 10px;
+    vertical-align: top;
+    svg {
+      opacity: 1;
+      vertical-align: top;
+      margin-top: 4px;
+    }
+    &.active {
+      background-color: #0957C3;
+      border-color: #0957C3;
+      svg {
+        opacity: 1;
+      }
+    }
+    &.red {
+      border-color: #FEA780;
+    }
+  }
+  &-label {
+    margin-bottom: 0;
+    line-height: 16px;
+  }
+}
+input[type=text] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}

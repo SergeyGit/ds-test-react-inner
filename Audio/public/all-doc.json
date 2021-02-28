@@ -1,0 +1,87 @@
+{
+  "status": true,
+  "specialties": [
+    {
+      "id": 45,
+      "name": "Рефлексотерапевт",
+      "alias": "refleksoterapevt"
+    },
+    {
+      "id": 28,
+      "name": "Невролог",
+      "alias": "nevrolog"
+    },
+    {
+      "id": 38,
+      "name": "ewrwer",
+      "alias": "werwerwerwer"
+    }
+  ],
+  "doctors": [
+    {
+      "id": 12,
+      "img": "https://doc.ua/api/image/image/6426/230/300",
+      "name": "Сулик",
+      "nameOther": "Роман Владимирович",
+      "specialties": [
+        {
+          "name": "Рефлексотерапевт",
+          "alias": "refleksoterapevt"
+        },
+        {
+          "name": "Невролог",
+          "alias": "nevrolog"
+        }
+      ],
+      "category_name": "Врач высшей категории",
+      "price": [
+        {
+          "duration": 10,
+          "price": 1
+        },
+        {
+          "duration": 20,
+          "price": 100
+        }
+      ],
+      "link": "/doctor/kiev/roman-sulik",
+      "experience": 13,
+      "alias": "roman-sulik",
+      "rate": 4.9,
+      "review_count": 125,
+      "short_about": "Занимается лечением заболеваний опорно-двигательного аппарата и нарушений работы нервной системы. Владеет методиками внутрисуставных инъекций, паравертебральных блокад и акупунктуры\r\n\r\n"
+    },
+    {
+      "id": 13,
+      "img": "https://doc.ua/api/image/image/6426/230/300",
+      "name": "Сулик",
+      "nameOther": "Роман Владимирович",
+      "specialties": [
+
+        {
+          "name": "ewrwer",
+          "alias": "werwerwerwer"
+        }
+      ],
+      "category_name": "Врач высшей категории",
+      "price": [
+        {
+          "duration": 10,
+          "price": 1
+        },
+        {
+          "duration": 20,
+          "price": 100
+        }
+      ],
+      "link": "/doctor/kiev/roman-sulik",
+      "experience": 13,
+      "alias": "roman-sulik",
+      "rate": 4.9,
+      "review_count": 125,
+      "short_about": "Занимается лечением заболеваний опорно-двигательного аппарата и нарушений работы нервной системы. Владеет методиками внутрисуставных инъекций, паравертебральных блокад и акупунктуры\r\n\r\n"
+    }
+  ],
+  "page": 1,
+  "per_page": 10
+}

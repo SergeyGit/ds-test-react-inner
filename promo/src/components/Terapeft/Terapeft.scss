@@ -1,0 +1,232 @@
+.Terapeft {
+  margin-top: 85px;
+  display: flex;
+  justify-content: space-between;
+  &_caption {
+    margin-top: 12px;
+    margin-bottom: 14px;
+    font-weight: 500;
+    &.bgc {
+      background: #00BD97;
+      border-radius: 15px 15px 0px 0px;
+      color: white;
+      padding: 12px;
+      margin: 0 3%;
+      width: 94%;
+      display: inline-block;
+      text-align: center;
+    }
+  }
+  &_main {
+    background: #FFFFFF;
+    box-shadow: 0 0 20px rgba(38, 91, 195, 0.12);
+    border-radius: 15px;
+    padding: 12px 15px 19px;
+    display: inline-flex;
+    width: 570px;
+    position: relative;
+    &_img {
+      background-color: gray;
+      overflow: hidden;
+      width: 230px;
+      min-width: 230px;
+      border-radius: 15px;
+      height: 300px;
+      margin-right: 10px;
+    }
+    &_text {
+      margin-top: 40px;
+      display: inline-flex;
+      flex-wrap: wrap;
+      width: 100%;
+      text-align: center;
+      align-content: flex-start;
+      flex-direction: column;
+    }
+    &_name {
+      font-weight: 500;
+      line-height: 1.5;
+      width: 100%;
+      span {
+        display: block;
+      }
+    }
+    &_position {
+      width: 100%;
+    }
+    &_class {
+      margin-top: auto;
+      margin-bottom: auto;
+      width: 100%;
+      line-height: 1.5;
+      &_expr {
+        font-size: 12px;
+        margin-top: 4px;
+        &_year {
+          width: 19px;
+          height: 18px;
+          display: inline-block;
+          background-image: url(../../img/years.svg);
+          background-repeat: no-repeat;
+          background-position: center;
+          color: white;
+          font-weight: 500;
+          text-align: center;
+          margin-right: 8px;
+        }
+      }
+    }
+
+    &_link {
+      color: #506DD7;
+      text-decoration: underline;
+      &:hover {
+        color: #484848;
+      }
+    }
+    &_stats {
+      background: #00BD97;
+      border-radius: 0 15px 15px 15px;
+      padding: 5px 20px;
+      color: white;
+      position: absolute;
+      bottom: 7px;
+      left: 0;
+    }
+    &_prev, &_next {
+      position: absolute;
+      top: 43%;
+      background: #FFFFFF;
+      box-shadow: 0px 0px 12px rgba(36, 52, 83, 0.12);
+      border-radius: 50%;
+      background-image: url(../../img/slider-clip.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 31px;
+      width: 30px;
+      left: 5px;
+      cursor: pointer;
+      transition: .3s;
+      &:hover {
+        background-color: #698AFF;
+      }
+    }
+    &_prev {
+      transform: rotate(180deg);
+    }
+    &_next {
+      left: auto;
+      right: 5px;
+    }
+  }
+  &_point {
+    width: 570px;
+    &_list {
+      &_point {
+        display: flex;
+        margin-bottom: 12px;
+        background: #FFFFFF;
+        border-radius: 15px;
+        padding: 18px 22px;
+        align-items: center;
+        justify-content: space-between;
+        &_text {
+          max-width: 250px;
+          line-height: 1.5;
+          &_cap {
+            font-weight: 500;
+            margin-bottom: 3px;
+          }
+        }
+        &_price {
+          span {
+            font-size: 16px;
+            color: #00BD97;
+            font-weight: 500;
+          }
+        }
+        &_button {
+          background: #FFFFFF;
+          border: 1px solid #2C1F9C;
+          border-radius: 35px;
+          color: #2C1F9C;
+          padding: 12px;
+          cursor: pointer;
+          transition: .3s;
+          &:hover {
+            background-color: #2C1F9C;
+            color: white;
+          }
+        }
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  @media (max-width: 1200px) {
+    &_main {
+      width: 100%;
+    }
+    &_point {
+      width: 100%;
+      &:first-child {
+        margin-right: 2%;
+      }
+    }
+  }
+  @media (max-width: 991px) {
+    margin-top: 45px;
+    flex-direction: column;
+    align-items: center;
+    &_point {
+      //width: 570px;
+      &_list {
+        &_point{
+          &_price {
+            margin-right: 10px;
+            margin-left: 10px;
+            white-space: pre;
+          }
+        }
+      }
+
+      &:first-child {
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  @media (max-width: 505px) {
+    &_caption{
+      &.bgc {
+        font-size: 14px;
+      }
+    }
+    &_main {
+      width: 94%;
+      margin-left: 3%;
+      &_name {
+        font-size: 16px;
+      }
+      &_img {
+        min-width: 110px;
+        width: 110px;
+        height: 145px;
+      }
+      &_text {
+        margin-top: 0;
+        text-align: left;
+      }
+      &_prev {
+        left: -3%;
+      }
+      &_next {
+        right: -3%;
+      }
+    }
+
+  }
+
+}

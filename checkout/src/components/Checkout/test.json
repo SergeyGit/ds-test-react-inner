@@ -1,0 +1,30 @@
+{
+  "status_id": 1,
+  "integration_status": "new",
+  "first_name": "andrii",
+  "middle_name": "",
+  "last_name": "skyba",
+  "phone": "380966871200",
+  "email": "andrewskyba@ukr.net",
+  "integration_id": 2,
+  "pharmacy_affiliate_name": "1 Соціальна Аптека",
+  "pharmacy_affiliate_address": "Оболонська (Дружби Народів) пл., 4Б, Київ",
+  "branch_id": 554930,
+  "cart_id": 107314,
+  "city_id": 1,
+  "user_id": 0,
+  "comment": "",
+  "delivery_type_code": "DTC_PICKUP",
+  "delivery_price": 0,
+  "paid": 0,
+  "is_call": 1,
+  "total_price": 202.76,
+  "items": [
+    {
+      "id": 632543,
+      "quantity": 1,
+      "pharmacy_id": 554930,
+      "price": 202.76
+    }
+  ]
+}

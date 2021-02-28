@@ -1,0 +1,79 @@
+.ExpressConsultation {
+  &_doc {
+    margin-left: auto;
+    &_point {
+      width: 275px;
+      display: inline-block;
+      margin-left: 20px;
+      border: 1px solid rgba(9, 87, 195, 0.3);
+      border-radius: 8px;
+      padding: 30px 20px;
+      vertical-align: top;
+      &_img {
+        width: 140px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      &_text {
+        font-size: 16px;
+        text-align: center;
+        margin-top: 30px;
+      }
+    }
+    .doctor_button {
+      margin-left: 20px;
+      width: 150px;
+      line-height: 40px;
+      margin-top: 20px;
+    }
+    @media  (max-width: 1199px) {
+      &_point {
+        width: 233px;
+        padding: 23px 15px;
+
+      }
+      .doctor_button {
+        margin-left: 15px;
+        width: 120px;
+      }
+    }
+    @media  (max-width: 991px) {
+      margin-right: auto;
+    }
+    @media (max-width: 550px) {
+      width: 100%;
+      &_point {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 10px;
+        &_img {
+          width: 64px;
+          display: inline-block;
+          vertical-align: top;
+          margin-right: 28px;
+        }
+        &_text {
+          display: inline-block;
+          margin-top: 0;
+          text-align: left;
+        }
+      }
+      .doctor_button {
+        margin-top: 12px;
+        margin-bottom: 0;
+      }
+    }
+    @media (max-width: 370px){
+      &_point {
+        padding: 15px 10px;
+        &_img {
+          width: 55px;
+          margin-right: 8px;
+        }
+        .doctor_button {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,77 @@
+.drop {
+    position: relative;
+    display: inline-block;
+    .i--drop {
+        //border-color: #5e6e71 transparent transparent;
+        display: inline-block;
+        //color: #5E6E71;
+        speak: none;
+        font-style: normal;
+        //width: 0;
+        //height: 0;
+        //margin-left: 4px;
+        //margin-top: 2px;
+        vertical-align: middle;
+        //border-width: 4px;
+        //border-style: solid;
+        font-size: 7px;
+        margin-left: 5px;
+        font-family: '#{$icomoon-font-family}' !important;
+        &:before {
+            content: $icon-angle-arrow-down;
+        }
+    }
+}
+.drop__toggler {
+    cursor: pointer;
+}
+.drop__text {
+    display: inline-block;
+    line-height: 1;
+    color: #5e6e71;
+}
+.drop__body {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    display: none;
+    padding: 3px 0;
+    background-color: #fff;
+    box-shadow: 2px 2px 15px rgba(66, 72, 90, 0.1);
+    border: 1px solid #E8E8E8;
+    border-radius: 8px;
+    &:before {
+        display: block;
+        position: absolute;
+        bottom: 100%;
+        content: '';
+        height: 0;
+        width: 0;
+        border: 7px solid transparent;
+        z-index: 1;
+        border-bottom-color: #E8E8E8;
+        right: 19px;
+    }
+    &:after {
+        display: block;
+        position: absolute;
+        right: 20px;
+        bottom: 100%;
+        content: '';
+        height: 0;
+        width: 0;
+        border: 6px solid transparent;
+        z-index: 1;
+        border-bottom-color: #fff;
+    }
+}
+.drop__body[data-simplebar=init] {
+    display: none;
+}
+.is--dropped {
+    .drop__body {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+}

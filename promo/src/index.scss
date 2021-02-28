@@ -1,0 +1,577 @@
+@import "vars";
+@import "fonts";
+@import "libs";
+
+::placeholder {
+  color: #666;
+}
+
+::selection {
+  background-color: $accent;
+  color: #fff;
+}
+a {
+  color: #0957C3;
+  &:hover {
+    color: #0957C3;
+  }
+}
+a:not([href]):not([tabindex]) {
+  cursor: pointer;
+}
+
+p {
+  line-height: 1.7;
+  font-size: 13px;
+  margin: 20px 0 20px;
+  //&:last-child {
+  //  margin-bottom: 0;
+  //}
+}
+.overflow {
+  overflow: hidden !important;
+}
+.overflow-modal {
+  @media only screen and (max-width: 1199px) {
+    overflow: hidden !important;
+  }
+}
+.opact {
+  @media only screen and (max-width: 1199px) {
+    opacity: 0 !important;
+  }
+}
+
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+img {
+  width: 100%;
+}
+
+section {
+  margin-bottom: 50px;
+  //color: $text;
+  @media (max-width: 991px) {
+    margin-bottom: 40px;
+  }
+}
+select:focus {
+  outline: none;
+}
+html {
+  overflow-x: hidden;
+}
+body {
+  font-size: 13px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1;
+  font-family: $default-font;
+  overflow-x: hidden;
+  background-color: #F4F7FA;
+  color: $text;
+  font-weight: 400;
+}
+
+
+h1, .h1 {
+  font-size: 48px;
+  //@media (max-width: 1200px) {
+  //  font-size: 75px;
+  //}
+  //@media (max-width: 991px) {
+  //  font-size: 60px;
+  //}
+  @media (max-width: 767px) {
+    font-size: 24px;
+  }
+}
+h2, .h2 {
+  font-size: 24px;
+  @media (max-width: 991px) {
+    font-size: 16px;
+  }
+}
+h3, .h3 {
+  font-size: 20px;
+  @media (max-width: 991px) {
+    font-size: 16px;
+  }
+  //@media (max-width: 767px) {
+  //  font-size: 14px;
+  //}
+}
+h4, .h4 {
+  font-size: 18px;
+  @media (max-width: 639px) {
+    font-size: 16px;
+  }
+}
+h5, .h5 {
+  font-size: 16px;
+  //@media (max-width: 639px) {
+  //  font-size: 14px;
+  //}
+}
+h6, .h6	 {
+  font-size: 14px;
+}
+.h7	 {
+  font-size: 13px;
+}
+.h8	 {
+  font-size: 11px;
+}
+.m-w {
+  font-weight: 500;
+}
+.w-b {
+  font-weight: bold;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: normal;
+}
+.container {
+  width: 100%;
+  max-width: 1170px;
+  margin-right: auto;
+  margin-left: auto;
+  @media only screen and (max-width: 1199px) {
+      width:96%;
+  }
+}
+.caption {
+  font-weight: 500;
+  line-height: 1.2;
+  position: relative;
+  z-index: 1;
+  &.image {
+    &:before {
+      content: '';
+      position: absolute;
+      top: -110px;
+      left: -80px;
+      //background-image: url(img/caption-im.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      width: 160px;
+      height: 160px;
+      z-index: -1;
+      @media (max-width: 991px) {
+        top: -67px;
+        left: -26px;
+        width: 90px;
+        height: 90px;
+      }
+    }
+  }
+
+}
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src:
+          url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?9v9bwa') format('truetype'),
+          url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?9v9bwa') format('woff'),
+          url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?9v9bwa##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-kievstar {
+  &:before {
+    content: $icon-kievstar;
+  }
+}
+.icon-kievstar-m {
+  &:before {
+    content: $icon-kievstar-m;
+  }
+}
+.icon-pinterest {
+  &:before {
+    content: $icon-pinterest;
+  }
+}
+.icon-viber {
+  &:before {
+    content: $icon-viber;
+  }
+}
+.icon-youtube {
+  &:before {
+    content: $icon-youtube;
+  }
+}
+.icon-telegram {
+  &:before {
+    content: $icon-telegram;
+  }
+}
+.icon-twitter {
+  &:before {
+    content: $icon-twitter;
+  }
+}
+.icon-insta {
+  &:before {
+    content: $icon-insta;
+  }
+}
+.icon-pen {
+  &:before {
+    content: $icon-pen;
+  }
+}
+.icon-facebook {
+  &:before {
+    content: $icon-facebook;
+  }
+}
+.icon-life {
+  &:before {
+    content: $icon-life;
+  }
+}
+.icon-mts {
+  &:before {
+    content: $icon-mts;
+  }
+}
+.icon-phone {
+  &:before {
+    content: $icon-phone;
+  }
+}
+.icon-clock {
+  &:before {
+    content: $icon-clock;
+  }
+}
+.icon-analyzes {
+  &:before {
+    content: $icon-analyzes;
+  }
+}
+.icon-sales {
+  &:before {
+    content: $icon-sales;
+  }
+}
+.icon-diagnostic {
+  &:before {
+    content: $icon-diagnostic;
+  }
+}
+.icon-clinics {
+  &:before {
+    content: $icon-clinics;
+  }
+}
+.icon-call {
+  &:before {
+    content: $icon-call;
+  }
+}
+.icon-inphone {
+  &:before {
+    content: $icon-inphone;
+  }
+}
+.icon-securt-cl {
+  &:before {
+    content: $icon-securt-cl;
+  }
+}
+.icon-cash {
+  &:before {
+    content: $icon-cash;
+  }
+}
+.icon-card {
+  &:before {
+    content: $icon-card;
+  }
+}
+.icon-require {
+  &:before {
+    content: $icon-require;
+  }
+}
+.icon-google {
+  &:before {
+    content: $icon-google;
+  }
+}
+.icon-attantion {
+  &:before {
+    content: $icon-attantion;
+  }
+}
+.icon-apple {
+  &:before {
+    content: $icon-apple;
+  }
+}
+.icon-promocode {
+  &:before {
+    content: $icon-promocode;
+  }
+}
+.icon-logout {
+  &:before {
+    content: $icon-logout;
+  }
+}
+.icon-chat-m {
+  &:before {
+    content: $icon-chat-m;
+  }
+}
+.icon-edits-m {
+  &:before {
+    content: $icon-edits-m;
+  }
+}
+.icon-user-m {
+  &:before {
+    content: $icon-user-m;
+  }
+}
+.icon-angle-arrow-down {
+  &:before {
+    content: $icon-angle-arrow-down;
+  }
+}
+.icon-mark {
+  &:before {
+    content: $icon-mark;
+  }
+}
+.icon-truck {
+  &:before {
+    content: $icon-truck;
+  }
+}
+.icon-info {
+  &:before {
+    content: $icon-info;
+  }
+}
+.icon-loop {
+  &:before {
+    content: $icon-loop;
+  }
+}
+.icon-help {
+  &:before {
+    content: $icon-help;
+  }
+}
+.icon-grid {
+  &:before {
+    content: $icon-grid;
+  }
+}
+.icon-list {
+  &:before {
+    content: $icon-list;
+  }
+}
+.icon-basket {
+  &:before {
+    content: $icon-basket;
+  }
+}
+.icon-medicines {
+  &:before {
+    content: $icon-medicines;
+  }
+}
+.icon-basket-2 {
+  &:before {
+    content: $icon-basket-2;
+  }
+}
+.icon-fire {
+  &:before {
+    content: $icon-fire;
+  }
+}
+.icon-health {
+  &:before {
+    content: $icon-health;
+  }
+}
+.icon-home {
+  &:before {
+    content: $icon-home;
+  }
+}
+.icon-user-m1 {
+  &:before {
+    content: $icon-user-m1;
+  }
+}
+.icon-sale2 {
+  &:before {
+    content: $icon-sale2;
+  }
+}
+.icon-clipboard {
+  &:before {
+    content: $icon-clipboard;
+  }
+}
+.icon-arrovv {
+  &:before {
+    content: $icon-arrovv;
+  }
+}
+.icon-heart {
+  &:before {
+    content: $icon-heart;
+  }
+}
+.icon-star-a {
+  &:before {
+    content: $icon-star-a;
+  }
+}
+.icon-dislike {
+  &:before {
+    content: $icon-dislike;
+  }
+}
+.icon-arr {
+  &:before {
+    content: $icon-arr;
+  }
+}
+.icon-doctor {
+  &:before {
+    content: $icon-doctor;
+  }
+}
+.icon-call1 {
+  &:before {
+    content: $icon-call1;
+  }
+}
+.icon-calback {
+  &:before {
+    content: $icon-calback;
+  }
+}
+.icon-phone-cl {
+  &:before {
+    content: $icon-phone-cl;
+  }
+}
+.icon-parcent-cl {
+  &:before {
+    content: $icon-parcent-cl;
+  }
+}
+.icon-star-e {
+  &:before {
+    content: $icon-star-e;
+  }
+}
+.icon-in-map {
+  &:before {
+    content: $icon-in-map;
+  }
+}
+.icon-district {
+  &:before {
+    content: $icon-district;
+  }
+}
+.icon-metro {
+  &:before {
+    content: $icon-metro;
+  }
+}
+.icon-star {
+  &:before {
+    content: $icon-star;
+  }
+}
+.icon-locate {
+  &:before {
+    content: $icon-locate;
+  }
+}
+.icon-close {
+  &:before {
+    content: $icon-close;
+  }
+}
+.t-a-c {
+  text-align: center;
+}
+
+.fade-in {
+  animation-name: terapeftFadeIn;
+  animation-duration: 500ms;
+  animation-timing-function: ease-in;
+  animation-fill-mode: both;
+  animation-delay: 450ms;
+}
+.fade-in-2 {
+  animation-name: terapeftFadeIn;
+  animation-duration: 500ms;
+  animation-timing-function: ease-in;
+  animation-fill-mode: both;
+}
+.zoomIn {
+  -webkit-animation-name: zoomIn;
+  animation-name:zoomIn;
+  animation-duration: 500ms;
+  animation-timing-function: ease-in;
+  animation-fill-mode: both;
+}
+
+@keyframes terapeftFadeIn {
+  0%{
+    opacity: 0
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes zoomIn {
+  0% {
+    //opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform:scale3d(.3, .3, .3)
+  }
+
+  50% {
+    //opacity:1
+  }
+}
+
+
+
+@import 'scss/form';
+
+
+
+

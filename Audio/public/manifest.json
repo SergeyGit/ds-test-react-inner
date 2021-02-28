@@ -1,0 +1,15 @@
+{
+  "short_name": "DOC.UA AUDIO",
+  "name": "Задать вопрос доктору &#129658; Онлайн 24/7 Срочные медицинские консультации. ✍ Получить консультацию узкого специалиста по телефону.",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

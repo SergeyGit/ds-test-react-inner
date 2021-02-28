@@ -1,0 +1,929 @@
+@import "~slick-carousel/slick/slick";
+.Promo {
+  min-height: 70vh;
+  @media only screen and (max-width: 767px) {
+    margin-top: 60px;
+  }
+  &Card {
+    margin-bottom: 30px;
+    position: relative;
+    &_direct {
+      font-size: 16px;
+      line-height: 1.2;
+      font-weight: bold;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #B5CDED;
+      width: 100%;
+      &.link {
+        color: #333536;
+        &:hover {
+          color: #0957C3;
+          text-decoration: none;
+        }
+      }
+      &.blue {
+        color: #0957C3;
+      }
+      //&_small {
+      //  position: relative;
+      //  z-index: 3;
+      //  color: black;
+      //  -webkit-text-stroke-width: 0;
+      //  font-size: 32px;
+      //  line-height: 37px;
+      //  letter-spacing: 0.12em;
+      //  margin-left: 27px;
+      //  display: block;
+      //  margin-top: -27px;
+      //}
+    }
+    &_container {
+      width: 100%;
+      background: #FFFFFF;
+      box-shadow: 2px 2px 15px rgba(128, 142, 184, 0.2);
+      border-radius: 8px;
+      border: 1px solid #ECECED;
+      display: flex;
+      align-content: stretch;
+      position: relative;
+      padding: 4px 4px 4px 0;
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background: #0957C3;
+        //box-shadow: 0 0 20px rgba(38, 91, 195, 0);
+        border-radius: 8px;
+        transform: matrix(1, 0, 0, 1, 0, 0);
+        height: 100%;
+        z-index: -1;
+        transition: transform .4s;
+      }
+      &:hover {
+        &:before {
+          transform: matrix(1, -0.03, 0.03, 1, 0, 0);
+          //box-shadow: 0 0 20px rgba(38, 91, 195, 0.2);
+        }
+      }
+    }
+    &_content {
+      width: 100%;
+      padding: 20px 40px 40px;
+      display: inline-flex;
+      flex-direction: column;
+      align-items: flex-start;
+      position: relative;
+      z-index: 1;
+    }
+    &_tittle {
+      line-height: 1.138;
+      color: #333536;
+      margin-top: 20px;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+    &_timer {
+      margin-top: auto;
+      display: inline-flex;
+      //border-radius: 8px;
+      position: relative;
+      overflow: hidden;
+      &.small {
+        line-height: 20px;
+        .PromoCard_timer_point {
+          //padding-right: 26px;
+          & > div:first-child {
+            display: none;
+          }
+
+          &_cont {
+            font-size: 16px;
+            margin-top: 0;
+
+            time {
+              width: 80px;
+              line-height: 20px;
+            }
+
+            &_day {
+              display: none;
+            }
+          }
+        }
+        &.check {
+          .PromoCard_timer_point {
+            &_cont {
+              //font-size: 13px;
+              &_day {
+                display: inline-block;
+                &:after {
+                  top: 0;
+                }
+              }
+            }
+
+          }
+        }
+        .PromoCard_timer_sale {
+            //display: inline-flex;
+            //align-items: center;
+            //padding-left: 12px;
+            //border-bottom-right-radius: 20px;
+            min-width: 40px;
+            flex-shrink: 0;
+            &_percent {
+              font-size: 16px;
+              margin-top: 0;
+            }
+            &_free {
+              margin-top: 0;
+            }
+          }
+      }
+      &_sale {
+        color: white;
+        text-align: center;
+        padding: 10px;
+        background-color: #47D7AC;
+        border-radius: 8px;
+        margin-right: 4px;
+        font-size: 13px;
+        min-width: 75px;
+        &_percent {
+          font-size: 24px;
+          margin-top: 7px;
+        }
+        &_free {
+          width: 34px;
+          margin-top: 5px;
+        }
+
+      }
+      &_point {
+        padding: 10px 15px;
+        border-radius: 8px;
+        background-color: #F4F7FA;
+        color: #828486;
+        &_cont {
+          display: flex;
+          font-size: 24px;
+          font-weight: 500;
+          //color: #6C63FF;
+          margin-top: 5px;
+          color: #333536;
+          time {
+            width: 134px;
+            white-space: nowrap;
+          }
+          &_day {
+            position: relative;
+            margin-right: 20px;
+            &:after {
+              content: '';
+              position: absolute;
+              right: -10px;
+              top: 4px;
+              width: 1px;
+              height: 18px;
+              background-color: #333536;
+            }
+            span {
+              font-size: 13px;
+              font-weight: 400;
+            }
+
+          }
+        }
+      }
+
+    }
+    &_clinics {
+      background:  linear-gradient(90deg, rgba(82, 106, 152, 0.025) 0%, rgba(255, 255, 255, 0) 11.91%), rgba(9, 87, 195, 0.03);
+      border-radius: 8px;
+      width: 398px;
+      flex-shrink: 0;
+      padding: 16px;
+      display: inline-flex;
+      position: relative;
+      z-index: 1;
+      &.only {
+        padding-bottom: 10px;
+        &:before {
+          content: none;
+        }
+        &:after {
+          background-color: rgba(9, 87, 195, 0.07);
+          bottom: 9px;
+        }
+      }
+      &.open-modal {
+        z-index: 5;
+      }
+      //&:before {
+      //  content: '';
+      //  position: absolute;
+      //  bottom: 19px;
+      //  left: 62px;
+      //  right: 62px;
+      //  background-color: rgba(9, 87, 195, 0.07);
+      //  height: 100px;
+      //  border-radius: 8px;
+      //  z-index: 1;
+      //}
+      //&:after {
+      //  content: '';
+      //  position: absolute;
+      //  bottom: 29px;
+      //  top: 30px;
+      //  left: 36px;
+      //  right: 36px;
+      //  //width: 320px;
+      //  background-color: #FFFFFF;
+      //  //height: 350px;
+      //  box-shadow: 2px 2px 15px rgba(116, 117, 120, 0.1);
+      //  border-radius: 8px;
+      //  z-index: 2;
+      //}
+      //&:before {
+      //  content: '';
+      //  position: absolute;
+      //  top: 53px;
+      //  left: 102px;
+      //  width: 265px;
+      //  background: rgba(54, 189, 174, 0.3);
+      //  height: 450px;
+      //  border-radius: 8px;
+      //  z-index: 1;
+      //}
+      //&:after {
+      //  content: '';
+      //  position: absolute;
+      //  top: 41px;
+      //  left: 77px;
+      //  width: 320px;
+      //  background: #FFFFFF;
+      //  height: 450px;
+      //  box-shadow: 1px 1px 10px rgba(80, 109, 154, 0.15);
+      //  border-radius: 8px;
+      //  z-index: 2;
+      //}
+      &_slider {
+        //box-shadow: 1px 1px 10px rgba(80, 109, 154, 0.15);
+        border-radius: 8px;
+        width: 100%;
+        z-index: 3;
+        .slick-slide {
+          padding: 10px;
+          //margin: -10px;
+        }
+        &_card {
+          //max-height: 450px;
+          box-shadow: 2px 2px 10px rgba(128, 142, 184, 0.12);
+          width: 100%;
+          height: 100%;
+          background: #FFFFFF;
+          position: relative;
+          overflow: hidden;
+          padding: 20px 30px 30px;
+          display: flex !important;
+          flex-direction: column;
+          align-items: center;
+          border-radius: 8px;
+          transition: .55s;
+          &_head {
+            display: flex;
+            margin-bottom: 20px;
+            width: 100%;
+            &_ava {
+              overflow: hidden;
+              min-width: 96px;
+              width: 96px;
+              height: 96px;
+              max-height: 96px;
+              background: #FCFCFC;
+              //background: #47D7AC;
+              border-radius: 8px;
+              margin-right: 15px;
+              position: relative;
+              font-size: 5px;
+
+            }
+            &_link {
+              color: #333536;
+              &:hover {
+                text-decoration: none;
+              }
+            }
+            &_cont {
+              color: black;
+              display: inline-flex;
+              flex-direction: column;
+              line-height: 1.2;
+              &_line {
+                //display: flex;
+                margin-top: 10px;
+                line-height: 1;
+                font-size: 0;
+                //justify-content: space-between;
+              }
+              &_mob {
+                display: none;
+              }
+              &_rate {
+                position: absolute;
+                top: -1px;
+                left: -1px;
+                font-size: 11px;
+                background-color: #FFFFFF;
+                border-radius: 0 0 8px 0;
+                padding: 5px 6px 5px 6px;
+                min-width: 35px;
+                line-height: 1;
+                margin-right: 10px;
+                display: inline-block;
+                font-weight: bold;
+                .icon-star {
+                  font-size: 10px;
+                  color: #FEB545;
+                  margin-right: 4px;
+                  //vertical-align: top;
+                }
+                &_stars {
+                  display: inline-block;
+                  font-size: 10px;
+                  color: #FFB84E;
+                  margin-left: 3px;
+                  letter-spacing: 1px;
+                }
+              }
+              &_rev {
+                font-size: 11px;
+                color: #707272;
+                span  {
+                  padding: 2px 4px;
+                  background-color: #EEF3FB;
+                  border-radius: 4px;
+                  font-weight: bold;
+                  color: #0957C3;
+                  position: relative;
+                  margin-right: 5px;
+                  &:before {
+                    position: absolute;
+                    top: 0;
+                    left: -1px;
+                    content: '';
+                    width: 6px;
+                    height: 3px;
+                    background-color: #47D7AC;
+                    transform: rotate(-45deg);
+                  }
+                }
+                &:hover {
+                  text-decoration: none;
+                }
+              }
+            }
+          }
+          &_point {
+            width: 100%;
+            display: flex;
+            padding-left: 5px;
+            align-items: center;
+            //padding-right: 5px;
+            margin-bottom: 10px;
+            line-height: 1.28;
+            &.last {
+              margin-bottom: 30px;
+              @media (max-width: 1200px) {
+                margin-bottom: 24px;
+              }
+            }
+            &.show {
+              cursor: pointer;
+              span {
+                border-bottom: 1px dashed #0957C3;
+                color: #0957C3;
+              }
+              &:hover {
+                .icon-in-map {
+                  text-decoration: none;
+                  color: #0957C3;
+                }
+              }
+            }
+            &_icon {
+              margin-right: 8px;
+              width: 16px;
+              min-width: 16px;
+              font-size: 11px;
+              color: #B6BFC8;
+              text-align: center;
+              &.icon-locate {
+                font-size: 12px;
+                color: #0957C3;
+              }
+              &.icon-metro {
+                font-size: 9px;
+              }
+            }
+            &_text {
+              color: #333536;
+              line-height: 1.5;
+              //cursor: pointer;
+              font-size: 13px;
+              .icon-in-map {
+                color: #333536 !important;
+                font-size: 13px;
+                border-bottom: none !important;
+              }
+              @media only screen and (max-width: 767px) {
+                font-size: 11px;
+              }
+            }
+            //a {
+            //  display: block;
+            //}
+          }
+          &_price {
+            margin-top: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            //color: #FEB545;
+            font-weight: bold;
+            span {
+              font-size: 18px;
+              line-height: 24px;
+            }
+            &_mob {
+              display: none;
+              background-color: #F2F6FC;
+              border-radius: 8px;
+              padding: 11px 10px;
+              font-size: 16px;
+              margin-right: 8px;
+              width: 100%;
+              justify-content: center;
+              font-weight: bold;
+              .PromoCard_clinics_slider_card_price_old {
+                font-size: 13px;
+                white-space: nowrap;
+                line-height: 18px;
+              }
+              .PromoCard_clinics_slider_card_price_main {
+                font-size: 16px;
+                white-space: nowrap;
+                line-height: 16px;
+                span {
+                  font-size: 11px;
+                }
+              }
+            }
+
+            &_main {
+              font-size: 24px;
+              vertical-align: top;
+            }
+            &_old {
+              font-weight: 400;
+              font-size: 18px;
+              line-height: 24px;
+              margin-right: 15px;
+              text-decoration-line: line-through;
+              color: #B6BFC8;
+            }
+          }
+          &_button {
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 15px;
+            line-height: 38px;
+            background-color: #0957C3;
+            width: 170px;
+            text-align: center;
+            color: white;
+            box-shadow: 0 3px 6px rgba(14, 55, 112, 0.1);
+            border-radius: 8px;
+            font-weight: 500;
+            font-size: 13px;
+            cursor: pointer;
+            display: inline-block;
+            &:hover {
+              background-color: #064CAD;
+              text-decoration: none;
+              color: white;
+            }
+            &_cnt {
+              width: 100%;
+              text-align: center;
+              margin-top: auto;
+            }
+          }
+          &_numb {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            background-color: white;
+            border-radius: 8px 0 8px;
+            font-size: 11px;
+            color: white;
+            padding: 10px 13px 9px 15px;
+            //opacity: 0;
+            font-weight: 600;
+            transition-duration: .3s;
+            transition-delay: .5s;
+            span {
+              padding-left: 3px;
+              margin-left: 3px;
+              color: white;
+              border-left: 1px solid white;
+              display: inline-block;
+            }
+          }
+        }
+        .slick-track {
+          display: flex;
+        }
+        &.slick-initialized .slick-slide {
+          display: flex;
+        }
+        .slick-list {
+          display: flex;
+        }
+
+        .slick-slide {
+          width: 100%;
+          //float: none;
+          //opacity: .2;
+          //transform:scale3d(.7, .7, .7);
+          &>div {
+            width: 100%;
+          }
+
+          .PromoCard_clinics_slider_card {
+            //transition: .4s;
+            //transform: scale(0.9117);
+            opacity: .7;
+            //transition: .3s cubic-bezier(0.05, 0.26, 0.99, 0.12);
+          }
+          &.slick-active {
+            .PromoCard_clinics_slider_card {
+              //transition: .4s;
+              opacity: 1;
+              //transform:scale(1);
+            }
+            .PromoCard_clinics_slider_card_numb {
+              background-color: #47D7AC;
+            }
+
+            //opacity: 1;
+          }
+        }
+        //.slick-slider, .slick-track, .slick-slide, .slick-slide>* {
+        //  height: 100% !important;
+        //}
+
+      }
+    }
+    @media (max-width: 1200px) {
+      //background: #FFFFFF;
+      //box-shadow: 1px 1px 10px rgba(12, 31, 67, 0.15);
+      //border-radius: 15px;
+      //padding-top: 10px;
+      margin-bottom: 20px;
+      &_container {
+        width: 100%;
+        flex-direction: column;
+        overflow: hidden;
+        padding: 0;
+        &:before {
+          content: none;
+        }
+      }
+      &_content {
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 30px;
+      }
+      &_clinics {
+        width: 100%;
+        border-radius: 0;
+        padding: 15px 0 0;
+        //&:after, &:before {
+        //  content: none;
+        //}
+        &_slider {
+          box-shadow: none;
+          &_card {
+            //flex-direction: column;
+            align-items: flex-start;
+
+            &_price {
+              width: 100%;
+              //margin-top: auto;
+              margin-bottom: 15px;
+            }
+            &_point {
+              padding-left: 0;
+            }
+            &_button {
+              width: 100%;
+              max-width: 239px;
+              margin-top: 0;
+            }
+          }
+        }
+
+      }
+      &_tittle {
+        margin-top: 18px;
+        line-height: 1.12;
+      }
+      .slick-arrow {
+        display: none !important;
+      }
+      .slick-dots {
+        font-size: 0;
+        margin: 0;
+        text-align: center;
+        padding: 0;
+        position: relative;
+        top: 0;
+        right: 0;
+        width: 100%;
+        li {
+          display: inline-block;
+          margin-right: 8px;
+          margin-left: 8px;
+        }
+        button {
+          background-color: #B5CDED;
+          border-color: #B5CDED;
+          border-radius: 50%;
+          width: 6px;
+          height: 6px;
+          padding: 0;
+          transition: .4s;
+          display: block;
+          font-size: 0;
+          line-height: 1;
+        }
+        .slick-active {
+          button {
+            background-color: #0957C3;
+            border-color: #0957C3;
+          }
+        }
+      }
+      .slick-slider {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+      .slick-slide {
+        opacity: 1;
+        padding: 15px;
+      }
+    }
+    @media (max-width: 991px) {
+      &_content {
+        width: 100%;
+        padding: 15px;
+      }
+      &_direct {
+        font-size: 13px;
+      }
+    }
+    @media (max-width: 767px) {
+      .slick-dots {
+        li {
+          margin-left: 4px;
+          margin-right: 4px;
+        }
+      }
+      &_container {
+        width: auto;
+        margin-left: -2%;
+        margin-right: -2%;
+        box-shadow: 2px 2px 15px rgba(128, 142, 184, 0.3);
+      }
+      &_content {
+        padding-bottom: 0;
+        p {
+          display: none;
+        }
+      }
+      &_timer {
+        display: none;
+        //margin-top: 18px;
+        //margin-left: auto;
+        //margin-right: auto;
+        //&_point {
+        //  &_cont {
+        //    time {
+        //      width: 117px;
+        //    }
+        //  }
+        //}
+      }
+      &_clinics {
+        padding-top: 0;
+        background-color: white;
+        .slick-dots {
+          position: relative;
+          order: -1;
+          margin-bottom: 20px;
+          margin-top: 5px;
+        }
+        &_slider {
+          &_card {
+            padding: 18px;
+            box-shadow: none;
+            border:  1px solid #B5CDED;
+            &_price {
+              //align-items: flex-end;
+              display: none;
+              &_mob {
+                display: inline-flex;
+              }
+            }
+            &_button {
+              &_cnt {
+                display: flex;
+                align-items: center;
+
+              }
+            }
+            &_point {
+              margin-bottom: 4px;
+              display: none;
+              &.area {
+                display: none;
+              }
+              &_text {
+                overflow-x: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+              }
+              &.show {
+                .PromoCard_clinics_slider_card_point_icon {
+                  color: #0957C3;
+                }
+                .PromoCard_clinics_slider_card_point_text {
+                  color: #0957C3;
+                  span {
+                    border-color: #0957C3;
+                    color: #0957C3;
+                  }
+
+                }
+
+              }
+            }
+            &_button {
+              max-width: 100%;
+            }
+            &_numb {
+              display: none;
+            }
+            &_head {
+              &_ava {
+                margin-right: 10px;
+              }
+              &_link {
+                font-size: 13px;
+              }
+              &_cont {
+                max-width: calc(100% - 106px);
+                &_line {
+                  margin-top: 10px;
+                }
+                &_mob {
+                  display: block;
+                  margin-top: 10px;
+                  overflow-x: hidden;
+                  max-width: 100%;
+                  .PromoCard_clinics_slider_card_point {
+                    display: flex;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    @media (max-width: 365px) {
+      &_timer {
+        &_sale {
+          min-width: 60px;
+          &_percent {
+            font-size: 18px;
+          }
+          &_free {
+            width: 30px;
+          }
+        }
+        &_point {
+          padding-left: 5px;
+          padding-right: 5px;
+          &_cont {
+            font-size: 18px;
+            &_day {
+              &:after {
+                top: 0;
+              }
+            }
+          }
+        }
+
+      }
+      //.PromoCard_timer_point_cont_day span {
+      //  display: none;
+      //}
+    }
+  }
+  //.slick-track {
+  //  width: 100% !important;
+  //}
+}
+.doctor {
+  &_about {
+    line-height: 1.8;
+    margin: 10px 0 20px;
+    &_more {
+      color: #0957c3;
+      cursor: pointer;
+    }
+    @media (max-width: 767px){
+      display: none;
+    }
+  }
+}
+
+.slick-vertical .slick-slide {
+  border-radius: 8px;
+  border: 0 solid white;
+  overflow: hidden;
+}
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  left: -5px;
+  font-size: 0;
+  background: #FFFFFF;
+  box-shadow: 2px 2px 15px rgba(128, 142, 184, 0.2);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  line-height: 1;
+  border-color: white;
+  transform: rotate(-90deg);
+  z-index: 1;
+  &:after, &:before {
+    content: '';
+    width: 8px;
+    height: 2px;
+    border-radius: 2px;
+    display: inline-block;
+    background-color: black;
+    transition: .4s;
+  }
+  &:after {
+    transform: rotate(45deg);
+  }
+  &:before {
+    margin-right: -3.5px;
+    transform: rotate(-45deg);
+  }
+  &:hover {
+    border-color: white;
+    background-color: white;
+    box-shadow: 2px 2px 15px rgba(128, 142, 184, 0.2);
+    &:after, &:before {
+      background-color: #0957C3;
+    }
+  }
+  &.slick-next {
+    left: auto;
+    right: -7px;
+    &:after, &:before {
+      margin-bottom: -2px;
+    }
+    &:after {
+      transform: rotate(-45deg);
+    }
+    &:before {
+      transform: rotate(45deg);
+    }
+  }
+}
+.Promo {
+  .PromoCard_direct.link {
+    @media (max-width: 767px){
+      color: #0957C3;
+    }
+  }
+}

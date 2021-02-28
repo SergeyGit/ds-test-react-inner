@@ -1,0 +1,192 @@
+//@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import "vars";
+@import "fonts";
+@import "libs";
+
+::placeholder {
+  color: #666;
+}
+
+::selection {
+  background-color: $accent;
+  color: #fff;
+}
+a {
+  color: white;
+  &:hover {
+    color: white;
+    text-decoration: none;
+  }
+}
+a:not([href]):not([tabindex]) {
+  cursor: pointer;
+}
+p {
+  line-height: 1.5;
+  font-size: 16px;
+  margin: 0 0 25px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  @media (max-width: 767px) {
+    font-size: 13px;
+  }
+}
+.f-w-m {
+  font-weight: 500;
+}
+.f-b {
+  font-weight: bold;
+}
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+.red {
+  color: #FF5050;
+}
+img {
+  width: 100%;
+}
+
+section {
+  margin-bottom: 72px;
+  color: $text;
+  animation-name: terapeftFadeIn;
+  animation-duration: 500ms;
+  animation-timing-function: ease-in;
+  animation-fill-mode: both;
+  @media (max-width: 991px) {
+    margin-bottom: 40px;
+  }
+}
+html {
+  overflow-x: hidden;
+}
+body {
+  font-size: 13px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1;
+  font-family: $default-font;
+  overflow-x: hidden;
+  color: $text;
+}
+
+
+h1, .h1 {
+  font-size: 48px;
+  @media (max-width: 991px) {
+    font-size: 40px;
+  }
+  @media (max-width: 767px) {
+    font-size: 24px;
+  }
+}
+h2, .h2 {
+  font-size: 32px;
+  @media (max-width: 767px) {
+    font-size: 24px;
+  }
+}
+h3, .h3 {
+  font-size: 20px;
+  @media (max-width: 767px) {
+    //font-size: 16px;
+  }
+}
+h4, .h4 {
+  font-size: 16px;
+  @media (max-width: 767px) {
+    font-size: 13px;
+  }
+}
+h6, .h6	 {
+  font-size: 13px;
+}
+.h7 {
+  font-size: 11px;
+}
+.m-w {
+  font-weight: 500;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: normal;
+}
+.overflow {
+  @media only screen and (max-width: 991px) {
+    overflow: hidden !important;
+  }
+
+}
+.container {
+  width: 100%;
+  max-width: 1170px;
+  margin-right: auto;
+  margin-left: auto;
+  @media only screen and (max-width: 1199px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+.caption {
+  font-weight: bold;
+  line-height: 1.2;
+  position: relative;
+  z-index: 1;
+  //&.image {
+  //  &:before {
+  //    content: '';
+  //    position: absolute;
+  //    top: -70px;
+  //    left: -80px;
+  //    background-image: url(img/caption-im.svg);
+  //    background-repeat: no-repeat;
+  //    background-position: center 100%;
+  //    background-size: 160px;
+  //    width: 160px;
+  //    height: 120px;
+  //    z-index: -1;
+  //    @media (max-width: 1200px) {
+  //      top: -50px;
+  //      left: -60px;
+  //      background-size: 130px;
+  //      width: 130px;
+  //      height: 100px;
+  //    }
+  //    @media (max-width: 991px) {
+  //      top: -50px;
+  //      left: -26px;
+  //      width: 90px;
+  //      height: 60px;
+  //      background-size: 90px;
+  //    }
+  //  }
+  //}
+
+}
+.Payment {
+  @media only screen and (max-width: 767px) {
+    margin-top: 60px;
+  }
+}
+.fade-in {
+  animation-name: terapeftFadeIn;
+  animation-duration: 500ms;
+  animation-timing-function: ease-in;
+  animation-fill-mode: both;
+}
+
+@keyframes terapeftFadeIn {
+  0%{
+    opacity: 0
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@import 'scss/form';
+
+
+
+

@@ -1,0 +1,388 @@
+.Header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+  background-color: transparent;
+  padding: 60px 0 20px;
+  z-index: 9;
+  transition: .3s;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0);
+  transform: translateY(0);
+  &.scroll {
+    transform: translateY(-40px);
+    transition: .4s;
+    background-color: #0957C3;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
+  }
+  @media only screen and (max-width: 1400px) {
+    padding-top: 40px;
+    &.scroll {
+      transform: translateY(-20px);
+    }
+  }
+  &.opact {
+    @media only screen and (max-width: 991px) {
+      opacity: 0;
+    }
+  }
+  &_container {
+    display: flex;
+    align-items: center;
+
+  }
+  &_Links {
+    flex-grow: 1;
+    &_point {
+      color: white;
+      margin-right: 30px;
+      padding-left: 2px;
+      padding-right: 2px;
+      position: relative;
+      cursor: pointer;
+      &:last-child {
+        margin-right: 0;
+      }
+      &:after, &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: -10px;
+        width: 0%;
+        height: 3px;
+        background: #fff;
+
+        border-radius: 8px;
+        //transition: .4s;
+        //transform: scaleX(0);
+        transform-origin: left;
+      }
+      &:after {
+        right: 0;
+        transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+      }
+      &:before {
+        left: 0;
+      }
+      &:hover {
+        &:after {
+          background: transparent;
+          width: 100%;
+          transition: 0s;
+        }
+        &:before {
+          background: #fff;
+          width: 100%;
+          transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+        }
+      }
+      &.active {
+        &:before {
+          transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+          width: 33px;
+        }
+        &:after {
+          background: transparent;
+          width: 100%;
+          transition: 0s;
+        }
+      }
+    }
+  }
+  &_login {
+    display: inline-flex;
+    margin-left: auto;
+    align-items: center;
+    margin-right: 50px;
+    img {
+      width: 14px;
+      margin-right: 12px;
+    }
+  }
+  &_Local {
+    display: inline-flex;
+    margin-right: 5px;
+    &_point {
+      margin-right: 10px;
+      position: relative;
+      cursor: pointer;
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        width: 10px;
+        height: 3px;
+        background: #FFFFFF;
+        border-radius: 8px;
+        opacity: 0;
+      }
+      &.active {
+        &:after {
+          opacity: 1;
+        }
+      }
+
+    }
+  }
+  .consultation {
+    margin-left: auto;
+    @media (max-width: 991px) {
+      margin-left: 15px;
+    }
+  }
+  .logo {
+    width: 107px;
+    margin-right: 25px;
+  }
+  @media (max-width: 1200px) {
+    padding-bottom: 10px;
+    .logo {
+      margin-right: 15px;
+    }
+    &_Links{
+      &_point {
+        margin-right: 10px;
+      }
+    }
+    &_login {
+      margin-right: 30px;
+    }
+  }
+  @media (max-width: 991px) {
+    padding-top: 30px;
+    padding-bottom: 5px;
+    .scroll {
+      transform: translateY(-25px);
+    }
+    &_Links, &_login, &_Local, .consultation {
+      display: none;
+    }
+  }
+  @media (max-width: 767px) {
+    //transform: translateY(-25px);
+    //background-color: #0957C3;
+  }
+}
+.button {
+  display: none;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  padding-top: 10px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  z-index: 7;
+  margin-left: auto;
+  transition: .5s cubic-bezier(1,0,.645,.65);
+  @media (max-width: 991px) {
+    display: block;
+  }
+}
+
+.toggled {
+  &.Header {
+    background-color: #0957C3;
+  }
+  .Header_menu-mob {
+    display: flex;
+  }
+}
+.Header_menu-mob {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: flex-start;
+  margin-top: 40px;
+  .consultation {
+    display: block;
+    margin-top: 50px;
+    margin-left: 0;
+    font-weight: 500;
+  }
+  .Header {
+    &_Links, &_login, &_Local {
+      display: block;
+    }
+    &_Links {
+      flex-grow: inherit;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 16px;
+      font-weight: bold;
+      &_point {
+        display: inline-block;
+        margin-bottom: 30px;
+        margin-right: 0;
+      }
+    }
+    &_login {
+      margin-right: auto;
+      margin-bottom: 30px;
+    }
+    &_Local {
+      width: 60px;
+      margin-top: 60px;
+      margin-right: -10px;
+      &_point {
+        display: inline-block;
+      }
+    }
+  }
+
+}
+//@media (max-width: 767px) {
+//  .button {
+//    display:block
+//  }
+//}
+
+.sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0
+}
+
+.menu-bar {
+  display: block;
+  position: relative;
+  background: white;
+  width: 26px;
+  height: 2px;
+
+  border-radius: 1px;
+
+  transition: .3s;
+  margin: 0 auto
+}
+
+.toggled .menu-bar {
+  background-color: #fff
+}
+
+.bar1 {
+  top: 0;
+  animation: .5s both topbar-back;
+  animation-play-state: initial!important
+}
+
+.bar2 {
+  opacity: 1
+}
+
+.bar3 {
+  bottom: 0;
+  animation: .5s both bottombar-back;
+  animation-play-state: initial!important
+}
+
+.menu-bar+.menu-bar {
+  margin-top: 5px
+}
+
+.toggled .bar1 {
+  top: 22%;
+  animation: .5s both topbar-x
+}
+
+.toggled .bar2 {
+  opacity: 0
+}
+
+.toggled .bar3 {
+  bottom: 25%;
+  animation: .5s both bottombar-x
+}
+
+
+@keyframes topbar-x {
+  0% {
+    top: 0;
+    transform: rotate(0)
+  }
+
+  45% {
+    top: 25%;
+    transform: rotate(145deg)
+  }
+
+  75% {
+    transform: rotate(130deg)
+  }
+
+  100% {
+   transform: rotate(135deg)
+  }
+}
+
+@keyframes topbar-back {
+  0% {
+    top: 25%;
+    transform: rotate(135deg)
+  }
+
+  45% {
+    transform: rotate(-10deg)
+  }
+
+  75% {
+    transform: rotate(5deg)
+  }
+
+  100% {
+    top: 0;
+    transform: rotate(0)
+  }
+}
+
+
+@keyframes bottombar-x {
+  0% {
+    bottom: 0;
+    transform: rotate(0)
+  }
+
+  45% {
+    bottom: 25%;
+    transform: rotate(-145deg)
+  }
+
+  75% {
+    transform: rotate(-130deg)
+  }
+
+  100% {
+    transform: rotate(-135deg)
+  }
+}
+
+
+@keyframes bottombar-back {
+  0% {
+    bottom: 25%;
+    transform: rotate(-135deg)
+  }
+
+  45% {
+    transform: rotate(10deg)
+  }
+
+  75% {
+    transform: rotate(-5deg)
+  }
+
+  100% {
+    bottom: 0;
+    transform: rotate(0)
+  }
+}

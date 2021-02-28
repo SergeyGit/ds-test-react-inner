@@ -1,0 +1,29 @@
+[
+  {
+    "id": 12,
+    "img": "test",
+    "name": "Сулик",
+    "nameOther": "Роман Владимирович",
+    "position": [
+      "Рефлексотерапевт",
+      "Невролог"
+    ],
+    "cat": "3",
+    "price": [
+      {
+        "duration": 10,
+        "price": 50
+      },
+      {
+        "duration": 20,
+        "price": 100
+      },
+      {
+        "duration": 30,
+        "price": 200
+      }
+    ],
+    "link": "doc.ua",
+    "year": 14
+  }
+]

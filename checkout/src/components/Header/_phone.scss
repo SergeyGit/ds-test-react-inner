@@ -1,0 +1,220 @@
+.phones {
+    position: relative;
+    display: inline-block;
+    margin-right: 18px;
+    vertical-align: bottom;
+    font-size: 18px;
+    .i--phones {
+        position: relative;
+        display: inline-block;
+        width: 72px;
+        top: 0;
+        left: 0;
+        background-image: url(../../img/phones.svg);
+        background-repeat: no-repeat;
+        // background-position: -98px -10px;
+        height: 18px;
+        // &--li {
+        //     background-position: -107px -10px;
+        // }
+        // &--ks {
+        //     background-position: -129px -10px;
+        // }
+        // &--vf {
+        //     background-position: -151px -10px;
+        // }
+    }
+    .icon-life {
+        color: #ffcc00;
+    }
+    .icon-kievstar {
+        // color: #00a8e7;
+        color: white;
+        @media  only screen and (min-width: 768px)  {
+            color: #00a8e7;
+        }
+    }
+    .icon-mts {
+        color: #ff4744;
+    }
+    .drop__toggler {
+        padding: 6px 9px;
+        border: 1px solid #e8e8e8;
+        border-radius: 21px;
+        height: 32px;
+    }
+    .i--drop {
+        margin-top: -7px;
+        margin-left: 0;
+    }
+    .drop__body {
+        top: 36px;
+        padding: 0;
+        overflow: hidden;
+        &:before {
+            content: none;
+        }
+        &:after {
+            content: none;
+        }
+    }
+}
+// .phones .i--phones--ks, .phones .i--phones--li, .phones .i--phones--vf, .i--phones--ua{
+//     background-image: url(../img/icons.png);
+//     width: 18px;
+//     height: 18px;
+// }
+.phones__info {
+    position: relative;
+    top: -4px;
+    margin-right: 15px;
+    font-size: 13px;
+    &:link {
+        text-decoration: none;
+    }
+    //&:visited {
+    //    color: #5e6e71;
+    //    text-decoration: none;
+    //}
+    //&:hover {
+    //    color: $blue;
+    //}
+    //&:active {
+    //    color: #00829b;
+    //}
+}
+.phones__item {
+    font-size: 13px;
+    //&:nth-last-child(1) {
+    //    border-top: 1px solid #e8e8e8;
+    //    text-align: center;
+    //    font-size: 14px;
+    //    margin-top: 8px;
+    //}
+}
+.phones__item.first-child {
+    display: none;
+}
+.phones__link {
+    display: block;
+    text-decoration: none;
+    white-space: nowrap;
+    padding: 15px 20px;
+    color: #5e6e71;
+    transition: none;
+    line-height: 1.4;
+    &:hover {
+        text-decoration: none;
+        color: $blue;
+        background-color: #F9FAFB;
+    }
+    .i {
+        top: 3px;
+        margin-right: 16px;
+        font-size: 16px;
+    }
+}
+.is--mobtoggled {
+    .phones {
+        margin: 92px 0 0 0;
+        display: block;
+        text-align: center;
+        .drop {
+            display: block;
+        }
+        .drop__toggler {
+            display: none;
+        }
+        .drop__body {
+            display: block;
+            position: static;
+            background: none;
+            border-radius: 0;
+            border: 0;
+            box-shadow: none;
+            &:before {
+                display: none;
+            }
+            &:after {
+                display: none;
+            }
+        }
+    }
+    .phones__info {
+        display: none;
+    }
+    .phones__item {
+        display: inline-block;
+        width: 100%;
+        font-size: 16px;
+        font-weight: 500;
+        //&:nth-child(1) {
+        //    display: inline-block;
+        //}
+        //&:nth-last-child(1) {
+        //    border: 0;
+        //    width: 100%;
+        //    font-size: 16px;
+        //}
+    }
+    .phones__link {
+        display: block;
+        text-decoration: none;
+        white-space: nowrap;
+        padding: 20px 20px;
+        color: #fff;
+        transition: none;
+        .i {
+            font-size: 19px;
+            color: white;
+        }
+        // &:hover {
+        //     text-decoration: none;
+        //     color: #fff;
+        //     background-color: #30ac9c;
+        // }
+        // &:focus {
+        //     text-decoration: none;
+        //     color: #fff;
+        //     background-color: #30ac9c;
+        // }
+    }
+}
+@media (min-width: 768px) {
+    .phones {
+        margin-right: 20px;
+    }
+    .is--logged {
+        .phones {
+            margin-right: 49px;
+        }
+    }
+    .is--headersticky {
+        .phones {
+            margin-right: 16px;
+        }
+    }
+}
+
+@media #{$phone} {
+    .phones__item.first-child {
+        display: block;
+    }
+    .is--mobtoggled {
+        .phones {
+            margin: 70px 0 0 0;
+        }
+        .header__wrapper {
+            position: fixed;
+            width: 100%;
+            top: 0;
+        }
+    }
+}
+// @media (min-width: 481px) {
+//     .is--mobtoggled {
+//         .phones__item {
+//             width: 48%;
+//         }
+//     }
+// }

@@ -1,0 +1,11 @@
+.Sort {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  &_button {
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 5px;
+  }
+}

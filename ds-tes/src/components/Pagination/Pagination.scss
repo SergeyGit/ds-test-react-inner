@@ -1,0 +1,28 @@
+.Pagination {
+  margin-top: 20px;
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+  &_button {
+    border: solid white;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 4px;
+    cursor: pointer;
+    opacity: .7;
+    &:hover {
+      opacity: 1;
+    }
+    &.right {
+      transform: rotate(-45deg);
+    }
+    &.left {
+      transform: rotate(135deg);
+    }
+  }
+  &_info {
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}

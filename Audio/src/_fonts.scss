@@ -1,0 +1,5 @@
+@import "_mixins/font-face";
+
+@include font-face("SuisseIntl", "fonts/SuisseIntl-Regular");
+@include font-face("SuisseIntl", "fonts/SuisseIntl-Medium", 500);
+@include font-face("SuisseIntl", "fonts/SuisseIntl-SemiBold", bold);

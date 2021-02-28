@@ -1,0 +1,456 @@
+{
+  "directions": [
+    {
+      "id": 14,
+      "name": "Дерматология",
+      "alias": "dermatologia"
+    },
+    {
+      "id": 22,
+      "name": "Маммология",
+      "alias": "mammologia"
+    },
+    {
+      "id": 36,
+      "name": "Проктология",
+      "alias": "proktologia"
+    },
+    {
+      "id": 38,
+      "name": "Психология",
+      "alias": "psihologia"
+    },
+    {
+      "id": 39,
+      "name": "Психотерапия",
+      "alias": "psihoterapia"
+    },
+    {
+      "id": 88,
+      "name": "Справки",
+      "alias": "spravki"
+    },
+    {
+      "id": 57,
+      "name": "Хирургия",
+      "alias": "hirurgiya"
+    }
+  ],
+  "offers": [
+    {
+      "id": 2483,
+      "title": "Консультация проктолога с полным осмотром",
+      "short_text": "По акции можно получить консультацию хирурга-проктолога высшей категории, включающую полный осмотр, постановку диагноза и назначение схемы лечения",
+      "full_o": "1565343088895",
+      "date_ftext\": \"<p>Дерматоскопия &ndash; это метод диагностики, благодаря которому можно визуально оценить возникновение заболеваний кожи на ранних стадиях.</p><p>С помощью аппаратной диагностики многократно увеличивается обзорная площадь, и дифференцируются новообразования и родинки всего тела, вне зависимости от их местонахождения.</p><p>Благодаря методу дерматоскопии можно вовремя выявить озлокачествливание новообразований, так как он позволяет оценить структуру и параметры, изменения невусов</p> <table style=\\\"width: 100%;\\\">\\r\\n<thead>\\r\\n<tr>\\r\\n<td style=\\\"text-align: center;\\\"><strong>Название услуги</strong></td>\\r\\n<td style=\\\"text-align: center;\\\"><strong>Количество</strong></td>\\r\\n</tr>\\r\\n</thead>\\r\\n<tbody>\\r\\n<tr>\\r\\n<td>Консультация хирурга-проктолога</td>\\r\\n<td>1</td>\\r\\n</tr>\\r\\n<tr>\\r\\n<td>Осмотр</td>\\r\\n<td>1&nbsp;</td>\\r\\n</tr>\\r\\n<tr>\\r\\n<td>Эндоскопический осмотр прямой кишки</td>\\r\\n<td>1&nbsp;</td>\\r\\n</tr>\\r\\n<tr>\\r\\n<td>Постановка диагноза</td>\\r\\n<td>1</td>\\r\\n</tr>\\r\\n<tr>\\r\\n<td>Назначение лечения</td>\\r\\n<td>1</td>\\r\\n</tr>\\r\\n</tbody>\\r\\n</table> <p>Дерматоскопия &ndash; это метод диагностики, благодаря которому можно визуально оценить возникновение заболеваний кожи на ранних стадиях.</p><p>С помощью аппаратной диагностики многократно увеличивается обзорная площадь, и дифференцируются новообразования и родинки всего тела, вне зависимости от их местонахождения.</p><p>Благодаря методу дерматоскопии можно вовремя выявить озлокачествливание новообразований, так как он позволяет оценить структуру и параметры, изменения невусов</p>\",\n      \"date_trom": "2016-12-05 00:00:00",
+      "price_from": 0,
+      "price_old": 400,
+      "price": 200,
+      "note": null,
+      "Doctors": null,
+      "affiliates": [
+        {
+          "id": 849,
+          "name": "Проктомед",
+          "address": "ул. Кириловская, 102 (Киевский шиферный завод)",
+          "worktime": "[{\"1\":{\"from\":\"1500\",\"to\":\"1900\",\"pre_entry\":\"0\"},\"2\":{\"from\":\"1500\",\"to\":\"1900\",\"pre_entry\":\"0\"},\"3\":{\"from\":\"1500\",\"to\":\"1900\",\"pre_entry\":\"0\"},\"4\":{\"from\":\"1500\",\"to\":\"1900\",\"pre_entry\":\"0\"},\"5\":{\"from\":\"1500\",\"to\":\"1900\",\"pre_entry\":\"0\"}}]",
+          "alias": "proktomed",
+          "metro": null,
+          "district": "Куреневка",
+          "subDistrict": "Подол,Петровка",
+          "rate": 4.8,
+          "review_count": 185
+        },
+        {
+          "id": 63,
+          "name": "Инновация, клиника европейской онкологии с. Лютеж",
+          "address": "Вышгородский район, с. Лютеж, ул. Витряного 69а",
+          "worktime": "[{\"1\":{\"from\":\"900\",\"to\":\"1730\",\"pre_entry\":\"0\"},\"2\":{\"from\":\"900\",\"to\":\"1730\",\"pre_entry\":\"0\"},\"3\":{\"from\":\"900\",\"to\":\"1730\",\"pre_entry\":\"0\"},\"4\":{\"from\":\"900\",\"to\":\"1730\",\"pre_entry\":\"0\"},\"5\":{\"from\":\"900\",\"to\":\"1730\",\"pre_entry\":\"0\"}}]",
+          "alias": "innovaciya-onkologicheskaya-klinika-s-lyutezh",
+          "metro": null,
+          "district": "с. Лютеж",
+          "subDistrict": null,
+          "rate": 4.8,
+          "review_count": 61
+        },
+        {
+          "id": 1257,
+          "name": "Инновация (Інновація) Life, поликлиника на Оболони",
+          "address": "ул. Кондратюка, 2-а",
+          "worktime": "[{\"1\":{\"from\":\"900\",\"to\":\"1730\",\"pre_entry\":\"0\"},\"2\":{\"from\":\"900\",\"to\":\"1730\",\"pre_entry\":\"0\"},\"3\":{\"from\":\"900\",\"to\":\"1730\",\"pre_entry\":\"0\"},\"4\":{\"from\":\"900\",\"to\":\"1730\",\"pre_entry\":\"0\"},\"5\":{\"from\":\"900\",\"to\":\"1730\",\"pre_entry\":\"0\"}}]",
+          "alias": "innovaciya-life-poliklinika-na-oboloni",
+          "metro": null,
+          "district": "Минский массив",
+          "subDistrict": null,
+          "rate": 4.8,
+          "review_count": 19
+        }
+      ],
+      "AffiliatesIds": "849",
+      "direction": "Проктология",
+      "idCat": "36"
+    },
+    {
+      "id": 3628,
+      "title": "Скидка на 3D-маммографию в воскресенье",
+      "short_text": "Диагностический центр клиники «Верум» предлагает эксклюзивную возможность – пройти 3D маммографию молочных желез с заключением врача и записью результатов обследования на компакт-диск с экономией 50%! Акция действует лишь один день в неделю - в воскресенье",
+      "full_text": null,
+      "date_to": "2019-11-30 00:00:00",
+      "date_from": "2018-11-13 00:00:00",
+      "price_from": 0,
+      "price_old": 1155,
+      "price": 578,
+      "note": null,
+      "Doctors": null,
+      "affiliates": [
+        {
+          "id": 1047,
+          "name": "Медицинский центр Verum (Верум)",
+          "address": "ул. Демеевская 13, оф. 3",
+          "worktime": "[{\"1\":{\"from\":\"800\",\"to\":\"2100\",\"pre_entry\":\"0\"},\"2\":{\"from\":\"800\",\"to\":\"2100\",\"pre_entry\":\"0\"},\"3\":{\"from\":\"800\",\"to\":\"2100\",\"pre_entry\":\"0\"},\"4\":{\"from\":\"800\",\"to\":\"2100\",\"pre_entry\":\"0\"},\"5\":{\"from\":\"800\",\"to\":\"2100\",\"pre_entry\":\"0\"},\"6\":{\"from\":\"800\",\"to\":\"2100\",\"pre_entry\":\"0\"},\"7\":{\"from\":\"800\",\"to\":\"2100\",\"pre_entry\":\"0\"}}]",
+          "alias": "verum",
+          "metro": "Демеевская",
+          "district": "Голосеевский",
+          "subDistrict": "Демеевка,Голосеево",
+          "rate": 5,
+          "review_count": 1865
+        }
+      ],
+      "AffiliatesIds": "1047",
+      "direction": "Маммология",
+      "idCat": "22"
+    },
+    {
+      "id": 4481,
+      "title": "Курс фракционного лазерного удаления рубцов, стрий и лазерное омоложение кожи со скидкой",
+      "short_text": "Клиника «Мед Сити» с 7.11.18 предоставляет своим клиентам скидки на курс фракционного лазерного удаления рубцов I и II категории, стрий и фракционного лазерного омоложения кожи",
+      "full_text": "<table style=\"width: 100%;\">\r\n<thead>\r\n<tr>\r\n<td style=\"text-align: center;\"><strong>Наименование услуги:</strong></td>\r\n<td style=\"text-align: center;\"><strong>Скидка:</strong></td>\r\n</tr>\r\n</thead>\r\n<tbody>\r\n<tr>\r\n<td>Три зоны фракционного лазерного удаления рубца, фракционного лазерного удаления стрий, фракционного лазерного омоложения кожи</td>\r\n<td style=\"text-align: center;\">10%</td>\r\n</tr>\r\n<tr>\r\n<td>Пять&nbsp;<span>зон фракционного лазерного удаления рубца, фракционного лазерного удаления стрий, фракционного лазерного омоложения кожи</span></td>\r\n<td style=\"text-align: center;\">15%</td>\r\n</tr>\r\n<tr>\r\n<td>Семь&nbsp;<span>зон фракционного лазерного удаления рубца, фракционного лазерного удаления стрий, фракционного лазерного омоложения кожи</span></td>\r\n<td style=\"text-align: center;\">20%</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+      "date_to": "2019-11-07 00:00:00",
+      "date_from": "2018-11-07 00:00:00",
+      "price_from": 1,
+      "price_old": null,
+      "price": 2940,
+      "note": null,
+      "Doctors": null,
+      "affiliates": [
+        {
+          "id": 825,
+          "name": "Med City (Мед Сити)",
+          "address": "ул. Павловская, 26/41",
+          "worktime": "[{\"1\":{\"from\":\"900\",\"to\":\"2100\",\"pre_entry\":\"0\"},\"2\":{\"from\":\"900\",\"to\":\"2100\",\"pre_entry\":\"0\"},\"3\":{\"from\":\"900\",\"to\":\"2100\",\"pre_entry\":\"0\"},\"4\":{\"from\":\"900\",\"to\":\"2100\",\"pre_entry\":\"0\"},\"5\":{\"from\":\"900\",\"to\":\"2100\",\"pre_entry\":\"0\"},\"6\":{\"from\":\"900\",\"to\":\"2100\",\"pre_entry\":\"0\"},\"7\":{\"from\":\"900\",\"to\":\"2100\",\"pre_entry\":\"0\"}}]",
+          "alias": "medcity",
+          "metro": "Лукьяновская",
+          "district": "Шевченковский",
+          "subDistrict": "Центр",
+          "rate": 3,
+          "review_count": 429
+        }
+      ],
+      "AffiliatesIds": "825",
+      "direction": "Дерматология",
+      "idCat": "14"
+    },
+    {
+      "id": 4377,
+      "title": "При удалении новообразований дерматоскопия бесплатно ",
+      "short_text": "Дерматоскопия новообразований кожи обязательно проводится перед их удалением, чтобы заранее обезопаситься от возможных негативных последствий. В медико-косметологическом центре «Excellence» вы получите дерматоскопию бесплатно при удалении новообразований",
+      "full_text": "<p>Дерматоскопия &ndash; это метод диагностики, благодаря которому можно визуально оценить возникновение заболеваний кожи на ранних стадиях.</p>\r\n<p>С помощью аппаратной диагностики многократно увеличивается обзорная площадь, и дифференцируются новообразования и родинки всего тела, вне зависимости от их местонахождения.</p>\r\n<p>Благодаря методу дерматоскопии можно вовремя выявить озлокачествливание новообразований, так как он позволяет оценить структуру и параметры, изменения невусов</p>",
+      "date_to": "2019-12-31 00:00:00",
+      "date_from": "2018-10-18 00:00:00",
+      "price_from": 0,
+      "price_old": null,
+      "price": null,
+      "note": null,
+      "Doctors": null,
+      "affiliates": [
+        {
+          "id": 1398,
+          "name": "Excellence (Экселенс), медико-косметологический центр на Софиевской Борщаговке",
+          "address": "ул. Мира, 41 (ЖК София)",
+          "worktime": "[{\"1\":{\"from\":\"1000\",\"to\":\"2000\",\"pre_entry\":\"0\"},\"2\":{\"from\":\"1000\",\"to\":\"2000\",\"pre_entry\":\"0\"},\"3\":{\"from\":\"1000\",\"to\":\"2000\",\"pre_entry\":\"0\"},\"4\":{\"from\":\"1000\",\"to\":\"2000\",\"pre_entry\":\"0\"},\"5\":{\"from\":\"1000\",\"to\":\"2000\",\"pre_entry\":\"0\"},\"6\":{\"from\":\"1000\",\"to\":\"2000\",\"pre_entry\":\"0\"},\"7\":{\"from\":\"1000\",\"to\":\"2000\",\"pre_entry\":\"0\"}}]",
+          "alias": "excellence-mediko-kosmetologicheskij-centr-na-sofievskoj-borshagovke",
+          "metro": null,
+          "district": "с. Софиевская Борщаговка",
+          "subDistrict": null,
+          "rate": 5,
+          "review_count": 14
+        }
+      ],
+      "AffiliatesIds": "1398",
+      "direction": null,
+      "idCat": "13"
+    },
+    {
+      "id": 986,
+      "title": "Пакетная программа «Здоровая грудь» до 40",
+      "short_text": "Консультация онколога-маммолога и УЗД молочных желез.",
+      "full_text": "<table style=\"width: 100%;\" border=\"0\">\r\n<thead>\r\n<tr>\r\n<th>Наименование услуги</th>\r\n<th>Количество</th>\r\n</tr>\r\n</thead>\r\n<tbody>\r\n<tr>\r\n<td>Консультация онколога-маммолога</td>\r\n<td style=\"text-align: center;\">1</td>\r\n</tr>\r\n<tr>\r\n<td>УЗД молочных желез</td>\r\n<td style=\"text-align: center;\">1</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p>&nbsp;</p>",
+      "date_to": null,
+      "date_from": null,
+      "price_from": 0,
+      "price_old": 770,
+      "price": 680,
+      "note": null,
+      "Doctors": null,
+      "affiliates": [
+        {
+          "id": 1257,
+          "name": "Инновация (Інновація) Life, поликлиника на Оболони",
+          "address": "ул. Кондратюка, 2-а",
+          "worktime": "[{\"1\":{\"from\":\"900\",\"to\":\"1730\",\"pre_entry\":\"0\"},\"2\":{\"from\":\"900\",\"to\":\"1730\",\"pre_entry\":\"0\"},\"3\":{\"from\":\"900\",\"to\":\"1730\",\"pre_entry\":\"0\"},\"4\":{\"from\":\"900\",\"to\":\"1730\",\"pre_entry\":\"0\"},\"5\":{\"from\":\"900\",\"to\":\"1730\",\"pre_entry\":\"0\"}}]",
+          "alias": "innovaciya-life-poliklinika-na-oboloni",
+          "metro": null,
+          "district": "Минский массив",
+          "subDistrict": null,
+          "rate": 4.8,
+          "review_count": 19
+        }
+      ],
+      "AffiliatesIds": "1257",
+      "direction": "Маммология",
+      "idCat": "22"
+    },
+    {
+      "id": 2617,
+      "title": "Пакет «Консультация маммолога  и маммография»",
+      "short_text": "Консультация онколога-маммолога и маммография.",
+      "full_text": "<table style=\"width: 100%;\">\r\n<thead>\r\n<tr>\r\n<td style=\"text-align: center;\"><strong>Название услуги</strong></td>\r\n<td style=\"text-align: center;\"><strong>Количество</strong></td>\r\n</tr>\r\n</thead>\r\n<tbody>\r\n<tr>\r\n<td>Консультация маммолога</td>\r\n<td>1</td>\r\n</tr>\r\n<tr>\r\n<td>Маммография</td>\r\n<td>1</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+      "date_to": "2018-12-31 23:59:59",
+      "date_from": "2017-02-16 00:00:00",
+      "price_from": 0,
+      "price_old": 1040,
+      "price": 855,
+      "note": null,
+      "Doctors": null,
+      "affiliates": [
+        {
+          "id": 63,
+          "name": "Инновация, клиника европейской онкологии с. Лютеж",
+          "address": "Вышгородский район, с. Лютеж, ул. Витряного 69а",
+          "worktime": "[{\"1\":{\"from\":\"900\",\"to\":\"1730\",\"pre_entry\":\"0\"},\"2\":{\"from\":\"900\",\"to\":\"1730\",\"pre_entry\":\"0\"},\"3\":{\"from\":\"900\",\"to\":\"1730\",\"pre_entry\":\"0\"},\"4\":{\"from\":\"900\",\"to\":\"1730\",\"pre_entry\":\"0\"},\"5\":{\"from\":\"900\",\"to\":\"1730\",\"pre_entry\":\"0\"}}]",
+          "alias": "innovaciya-onkologicheskaya-klinika-s-lyutezh",
+          "metro": null,
+          "district": "с. Лютеж",
+          "subDistrict": null,
+          "rate": 4.8,
+          "review_count": 61
+        }
+      ],
+      "AffiliatesIds": "63",
+      "direction": "Хирургия",
+      "idCat": "57"
+    },
+    {
+      "id": 1866,
+      "title": "Справка №086/0 для абитуриентов",
+      "short_text": "Медицинский осмотр и оформление справки №086/0 для абитуриентов.",
+      "full_text": "<table style=\"width: 100%;\">\r\n<thead>\r\n<tr>\r\n<td style=\"text-align: center;\"><strong>Название услуги</strong></td>\r\n<td style=\"text-align: center;\"><strong>Количество</strong></td>\r\n</tr>\r\n</thead>\r\n<tbody>\r\n<tr>\r\n<td><strong>Консультации</strong></td>\r\n<td>&nbsp;</td>\r\n</tr>\r\n<tr>\r\n<td>Отоларинголог</td>\r\n<td>1</td>\r\n</tr>\r\n<tr>\r\n<td>Педиатр/Терапевт</td>\r\n<td>1</td>\r\n</tr>\r\n<tr>\r\n<td>Невролог</td>\r\n<td>1</td>\r\n</tr>\r\n<tr>\r\n<td>Офтальмолог с проведением&nbsp;исследования глазного дна</td>\r\n<td>1</td>\r\n</tr>\r\n<tr>\r\n<td>Хирург-ортопед</td>\r\n<td>1</td>\r\n</tr>\r\n<tr>\r\n<td><strong>Обследования</strong></td>\r\n<td>&nbsp;</td>\r\n</tr>\r\n<tr>\r\n<td>Рентген органов грудной клетки</td>\r\n<td>1</td>\r\n</tr>\r\n<tr>\r\n<td>Общий анализ крови развернутый</td>\r\n<td>1</td>\r\n</tr>\r\n<tr>\r\n<td>Общий анализ мочи</td>\r\n<td>1</td>\r\n</tr>\r\n<tr>\r\n<td>Анализ на глюкозу крови</td>\r\n<td>1</td>\r\n</tr>\r\n<tr>\r\n<td><strong>Оформление медицинской документации по справке&nbsp;№086/0</strong></td>\r\n<td>&nbsp;</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+      "date_to": "2018-12-31 23:59:59",
+      "date_from": "2016-05-17 00:00:00",
+      "price_from": 0,
+      "price_old": null,
+      "price": 1450,
+      "note": null,
+      "Doctors": null,
+      "affiliates": [
+        {
+          "id": 1,
+          "name": "Здравица (Zdravitsa), клиника семейной медицины",
+          "address": "ул. Старонаводницкая, 13, прим. 126 В в бук.А, секция Д",
+          "worktime": "[{\"1\":{\"from\":\"730\",\"to\":\"2100\",\"pre_entry\":\"0\"},\"2\":{\"from\":\"730\",\"to\":\"2100\",\"pre_entry\":\"0\"},\"3\":{\"from\":\"730\",\"to\":\"2100\",\"pre_entry\":\"0\"},\"4\":{\"from\":\"730\",\"to\":\"2100\",\"pre_entry\":\"0\"},\"5\":{\"from\":\"730\",\"to\":\"2100\",\"pre_entry\":\"0\"}},{\"6\":{\"from\":\"800\",\"to\":\"2000\",\"pre_entry\":\"0\"}},{\"7\":{\"from\":\"900\",\"to\":\"2000\",\"pre_entry\":\"0\"}}]",
+          "alias": "zdravica-zdravitsa-klinika-semejnoj-mediciny",
+          "metro": "Печерская",
+          "district": "Печерский",
+          "subDistrict": "Зверинец,Нижний Печерск",
+          "rate": 4.9,
+          "review_count": 1363
+        }
+      ],
+      "AffiliatesIds": "1",
+      "direction": "Справки",
+      "idCat": "88"
+    },
+    {
+      "id": 1867,
+      "title": "Справка №086/0 для школьников",
+      "short_text": "Медицинский осмотр и оформление справки №086/0 для школьников.",
+      "full_text": "<table style=\"width: 100%;\">\r\n<thead>\r\n<tr>\r\n<td style=\"text-align: center;\"><strong>Название услуги</strong></td>\r\n<td style=\"text-align: center;\"><strong>Количество</strong></td>\r\n</tr>\r\n</thead>\r\n<tbody>\r\n<tr>\r\n<td><strong>Консультации</strong></td>\r\n<td>&nbsp;</td>\r\n</tr>\r\n<tr>\r\n<td>Отоларинголог</td>\r\n<td>1</td>\r\n</tr>\r\n<tr>\r\n<td>Офтальмолог</td>\r\n<td>1</td>\r\n</tr>\r\n<tr>\r\n<td>Невролог</td>\r\n<td>1</td>\r\n</tr>\r\n<tr>\r\n<td>Педиатр</td>\r\n<td>1</td>\r\n</tr>\r\n<tr>\r\n<td>Ортопед</td>\r\n<td>1</td>\r\n</tr>\r\n<tr>\r\n<td><strong>Обследования</strong></td>\r\n<td>&nbsp;</td>\r\n</tr>\r\n<tr>\r\n<td>Анализ крови развернутый</td>\r\n<td>1</td>\r\n</tr>\r\n<tr>\r\n<td>Общий анализ мочи</td>\r\n<td>1</td>\r\n</tr>\r\n<tr>\r\n<td>Проба Руфье</td>\r\n<td>1</td>\r\n</tr>\r\n<tr>\r\n<td>Соскоб на энтеробиоз</td>\r\n<td>1</td>\r\n</tr>\r\n<tr>\r\n<td><strong>Оформление медицинской документации по справке&nbsp;№086/0</strong></td>\r\n<td>&nbsp;</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+      "date_to": "2018-12-31 23:59:59",
+      "date_from": "2016-05-17 00:00:00",
+      "price_from": 0,
+      "price_old": null,
+      "price": 940,
+      "note": null,
+      "Doctors": null,
+      "affiliates": [
+        {
+          "id": 1,
+          "name": "Здравица (Zdravitsa), клиника семейной медицины",
+          "address": "ул. Старонаводницкая, 13, прим. 126 В в бук.А, секция Д",
+          "worktime": "[{\"1\":{\"from\":\"730\",\"to\":\"2100\",\"pre_entry\":\"0\"},\"2\":{\"from\":\"730\",\"to\":\"2100\",\"pre_entry\":\"0\"},\"3\":{\"from\":\"730\",\"to\":\"2100\",\"pre_entry\":\"0\"},\"4\":{\"from\":\"730\",\"to\":\"2100\",\"pre_entry\":\"0\"},\"5\":{\"from\":\"730\",\"to\":\"2100\",\"pre_entry\":\"0\"}},{\"6\":{\"from\":\"800\",\"to\":\"2000\",\"pre_entry\":\"0\"}},{\"7\":{\"from\":\"900\",\"to\":\"2000\",\"pre_entry\":\"0\"}}]",
+          "alias": "zdravica-zdravitsa-klinika-semejnoj-mediciny",
+          "metro": "Печерская",
+          "district": "Печерский",
+          "subDistrict": "Зверинец,Нижний Печерск",
+          "rate": 4.9,
+          "review_count": 1363
+        }
+      ],
+      "AffiliatesIds": "1",
+      "direction": "Справки",
+      "idCat": "88"
+    },
+    {
+      "id": 990,
+      "title": "Пакет «Скрининг рака шейки матки «Леди» со скидкой 24%",
+      "short_text": "Комплексный скрининг рака шейки матки, анализ на вирус папилломы человека, УЗИ органов малого таза и 2 других исследования.",
+      "full_text": "<p>Папилломавирус человека, накапливаясь в значительном количестве в организме женщины, способен привести к атипичным изменениям клеток эпителия, выстилающего шейку матки. На осмотре это выражается в видимой дисплазии участка ткани, а цитологический соскоб показывает наличие клеток с измененной структурой.</p>\r\n<table style=\"width: 100%;\" border=\"0\">\r\n<thead>\r\n<tr>\r\n<th>В пакет&nbsp;&laquo;Скрининг рака шейки матки &laquo;Леди&raquo; входит:</th>\r\n<th>Количество</th>\r\n</tr>\r\n</thead>\r\n<tbody>\r\n<tr>\r\n<td>Консультация онкогинеколога</td>\r\n<td style=\"text-align: center;\">1</td>\r\n</tr>\r\n<tr>\r\n<td>Цитология мазка</td>\r\n<td style=\"text-align: center;\">1</td>\r\n</tr>\r\n<tr>\r\n<td>Кольпоскопия</td>\r\n<td style=\"text-align: center;\">1</td>\r\n</tr>\r\n<tr>\r\n<td>УЗД органов малого таза</td>\r\n<td style=\"text-align: center;\">1</td>\r\n</tr>\r\n<tr>\r\n<td>Анализ на папилломавирус (ВПЧ)</td>\r\n<td style=\"text-align: center;\">1</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+      "date_to": "2018-12-31 23:59:59",
+      "date_from": "2015-07-10 00:00:00",
+      "price_from": 0,
+      "price_old": 1415,
+      "price": 1080,
+      "note": null,
+      "Doctors": null,
+      "affiliates": [
+        {
+          "id": 63,
+          "name": "Инновация, клиника европейской онкологии с. Лютеж",
+          "address": "Вышгородский район, с. Лютеж, ул. Витряного 69а",
+          "worktime": "[{\"1\":{\"from\":\"900\",\"to\":\"1730\",\"pre_entry\":\"0\"},\"2\":{\"from\":\"900\",\"to\":\"1730\",\"pre_entry\":\"0\"},\"3\":{\"from\":\"900\",\"to\":\"1730\",\"pre_entry\":\"0\"},\"4\":{\"from\":\"900\",\"to\":\"1730\",\"pre_entry\":\"0\"},\"5\":{\"from\":\"900\",\"to\":\"1730\",\"pre_entry\":\"0\"}}]",
+          "alias": "innovaciya-onkologicheskaya-klinika-s-lyutezh",
+          "metro": null,
+          "district": "с. Лютеж",
+          "subDistrict": null,
+          "rate": 4.8,
+          "review_count": 61
+        },
+        {
+          "id": 1257,
+          "name": "Инновация (Інновація) Life, поликлиника на Оболони",
+          "address": "ул. Кондратюка, 2-а",
+          "worktime": "[{\"1\":{\"from\":\"900\",\"to\":\"1730\",\"pre_entry\":\"0\"},\"2\":{\"from\":\"900\",\"to\":\"1730\",\"pre_entry\":\"0\"},\"3\":{\"from\":\"900\",\"to\":\"1730\",\"pre_entry\":\"0\"},\"4\":{\"from\":\"900\",\"to\":\"1730\",\"pre_entry\":\"0\"},\"5\":{\"from\":\"900\",\"to\":\"1730\",\"pre_entry\":\"0\"}}]",
+          "alias": "innovaciya-life-poliklinika-na-oboloni",
+          "metro": null,
+          "district": "Минский массив",
+          "subDistrict": null,
+          "rate": 4.8,
+          "review_count": 19
+        }
+      ],
+      "AffiliatesIds": "1257,63",
+      "direction": null
+    },
+    {
+      "id": 992,
+      "title": "Пакет «Скрининг колоректального рака»",
+      "short_text": "Полное обследование на рак колоректальной локализации включает анализы и консультативное заключение ведущего специалиста клиники.",
+      "full_text": "<table style=\"width: 100%;\" border=\"0\">\r\n<thead>\r\n<tr>\r\n<th>Наименование услуги</th>\r\n<th>Количество</th>\r\n</tr>\r\n</thead>\r\n<tbody>\r\n<tr>\r\n<td>Консультация онколога</td>\r\n<td style=\"text-align: center;\">1</td>\r\n</tr>\r\n<tr>\r\n<td>Колоноскопия</td>\r\n<td style=\"text-align: center;\">1</td>\r\n</tr>\r\n<tr>\r\n<td>Анализ кала на скрытую кровь</td>\r\n<td style=\"text-align: center;\">1</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+      "date_to": "2018-12-31 23:59:59",
+      "date_from": "2015-07-10 00:00:00",
+      "price_from": 0,
+      "price_old": null,
+      "price": 2700,
+      "note": null,
+      "Doctors": null,
+      "affiliates": [
+        {
+          "id": 63,
+          "name": "Инновация, клиника европейской онкологии с. Лютеж",
+          "address": "Вышгородский район, с. Лютеж, ул. Витряного 69а",
+          "worktime": "[{\"1\":{\"from\":\"900\",\"to\":\"1730\",\"pre_entry\":\"0\"},\"2\":{\"from\":\"900\",\"to\":\"1730\",\"pre_entry\":\"0\"},\"3\":{\"from\":\"900\",\"to\":\"1730\",\"pre_entry\":\"0\"},\"4\":{\"from\":\"900\",\"to\":\"1730\",\"pre_entry\":\"0\"},\"5\":{\"from\":\"900\",\"to\":\"1730\",\"pre_entry\":\"0\"}}]",
+          "alias": "innovaciya-onkologicheskaya-klinika-s-lyutezh",
+          "metro": null,
+          "district": "с. Лютеж",
+          "subDistrict": null,
+          "rate": 4.8,
+          "review_count": 61
+        },
+        {
+          "id": 1257,
+          "name": "Инновация (Інновація) Life, поликлиника на Оболони",
+          "address": "ул. Кондратюка, 2-а",
+          "worktime": "[{\"1\":{\"from\":\"900\",\"to\":\"1730\",\"pre_entry\":\"0\"},\"2\":{\"from\":\"900\",\"to\":\"1730\",\"pre_entry\":\"0\"},\"3\":{\"from\":\"900\",\"to\":\"1730\",\"pre_entry\":\"0\"},\"4\":{\"from\":\"900\",\"to\":\"1730\",\"pre_entry\":\"0\"},\"5\":{\"from\":\"900\",\"to\":\"1730\",\"pre_entry\":\"0\"}}]",
+          "alias": "innovaciya-life-poliklinika-na-oboloni",
+          "metro": null,
+          "district": "Минский массив",
+          "subDistrict": null,
+          "rate": 4.8,
+          "review_count": 19
+        }
+      ],
+      "AffiliatesIds": "1257,63",
+      "direction": null
+    },
+    {
+      "id": 995,
+      "title": "Пакет «Скрининг рака легких»",
+      "short_text": "Консультация онколога и КТ грудной полости.",
+      "full_text": "<table style=\"width: 100%;\" border=\"0\">\r\n<tbody>\r\n<tr>\r\n<th>Наименование услуги</th>\r\n<th>Количество</th>\r\n</tr>\r\n<tr>\r\n<td>Консультация онколога</td>\r\n<td style=\"text-align: center;\">1</td>\r\n</tr>\r\n<tr>\r\n<td>Низкодозовая компьютерная томография грудной полости</td>\r\n<td style=\"text-align: center;\">1</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+      "date_to": "2018-12-31 23:59:59",
+      "date_from": "2015-07-10 00:00:00",
+      "price_from": 0,
+      "price_old": null,
+      "price": 780,
+      "note": null,
+      "Doctors": null,
+      "affiliates": [
+        {
+          "id": 63,
+          "name": "Инновация, клиника европейской онкологии с. Лютеж",
+          "address": "Вышгородский район, с. Лютеж, ул. Витряного 69а",
+          "worktime": "[{\"1\":{\"from\":\"900\",\"to\":\"1730\",\"pre_entry\":\"0\"},\"2\":{\"from\":\"900\",\"to\":\"1730\",\"pre_entry\":\"0\"},\"3\":{\"from\":\"900\",\"to\":\"1730\",\"pre_entry\":\"0\"},\"4\":{\"from\":\"900\",\"to\":\"1730\",\"pre_entry\":\"0\"},\"5\":{\"from\":\"900\",\"to\":\"1730\",\"pre_entry\":\"0\"}}]",
+          "alias": "innovaciya-onkologicheskaya-klinika-s-lyutezh",
+          "metro": null,
+          "district": "с. Лютеж",
+          "subDistrict": null,
+          "rate": 4.8,
+          "review_count": 61
+        }
+      ],
+      "AffiliatesIds": "63",
+      "direction": null
+    },
+    {
+      "id": 989,
+      "title": "Пакет «Скрининг рака шейки матки классический»",
+      "short_text": "Ранний скрининг онкологических и предраковых состояний шейки матки и репродуктивной системы женщины.",
+      "full_text": "<table style=\"width: 100%;\" border=\"0\">\r\n<thead>\r\n<tr>\r\n<th>Наименование услуги</th>\r\n<th>Количество</th>\r\n</tr>\r\n</thead>\r\n<tbody>\r\n<tr>\r\n<td>Консультация онкогинеколога</td>\r\n<td style=\"text-align: center;\">1</td>\r\n</tr>\r\n<tr>\r\n<td>УЗИ органов малого таза</td>\r\n<td style=\"text-align: center;\">1</td>\r\n</tr>\r\n<tr>\r\n<td>Кольпоскопия</td>\r\n<td style=\"text-align: center;\">1</td>\r\n</tr>\r\n<tr>\r\n<td>Цитология мазка</td>\r\n<td style=\"text-align: center;\">1</td>\r\n</tr>\r\n</tbody>\r\n</table>",
+      "date_to": "2018-12-31 23:59:59",
+      "date_from": "2015-07-09 00:00:00",
+      "price_from": 0,
+      "price_old": null,
+      "price": 936,
+      "note": null,
+      "Doctors": null,
+      "affiliates": [
+        {
+          "id": 63,
+          "name": "Инновация, клиника европейской онкологии с. Лютеж",
+          "address": "Вышгородский район, с. Лютеж, ул. Витряного 69а",
+          "worktime": "[{\"1\":{\"from\":\"900\",\"to\":\"1730\",\"pre_entry\":\"0\"},\"2\":{\"from\":\"900\",\"to\":\"1730\",\"pre_entry\":\"0\"},\"3\":{\"from\":\"900\",\"to\":\"1730\",\"pre_entry\":\"0\"},\"4\":{\"from\":\"900\",\"to\":\"1730\",\"pre_entry\":\"0\"},\"5\":{\"from\":\"900\",\"to\":\"1730\",\"pre_entry\":\"0\"}}]",
+          "alias": "innovaciya-onkologicheskaya-klinika-s-lyutezh",
+          "metro": null,
+          "district": "с. Лютеж",
+          "subDistrict": null,
+          "rate": 4.8,
+          "review_count": 61
+        },
+        {
+          "id": 1257,
+          "name": "Инновация (Інновація) Life, поликлиника на Оболони",
+          "address": "ул. Кондратюка, 2-а",
+          "worktime": "[{\"1\":{\"from\":\"900\",\"to\":\"1730\",\"pre_entry\":\"0\"},\"2\":{\"from\":\"900\",\"to\":\"1730\",\"pre_entry\":\"0\"},\"3\":{\"from\":\"900\",\"to\":\"1730\",\"pre_entry\":\"0\"},\"4\":{\"from\":\"900\",\"to\":\"1730\",\"pre_entry\":\"0\"},\"5\":{\"from\":\"900\",\"to\":\"1730\",\"pre_entry\":\"0\"}}]",
+          "alias": "innovaciya-life-poliklinika-na-oboloni",
+          "metro": null,
+          "district": "Минский массив",
+          "subDistrict": null,
+          "rate": 4.8,
+          "review_count": 19
+        }
+      ],
+      "AffiliatesIds": "1257,63",
+      "direction": null
+    }
+  ]
+}

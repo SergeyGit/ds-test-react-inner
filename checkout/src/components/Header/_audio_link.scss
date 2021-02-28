@@ -1,0 +1,51 @@
+.audio_link {
+  background: #feb545;
+  border-radius: 35px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 13px;
+  color: #fff;
+  padding: 6px 20px;
+  align-items: center;
+  display: inline-flex;
+  text-decoration: none;
+  vertical-align: middle;
+  margin-left: 40px;
+  margin-top: -2px;
+}
+
+.audio_link:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+.audio_link img {
+  margin-left: 12px;
+  width: 13px;
+  display: inline-block
+}
+
+@media (max-width: 991px) {
+  .audio_link {
+    font-size: 12px;
+    padding: 8px 12px;
+    margin-left: 20px
+  }
+
+  .audio_link img {
+    display: none
+  }
+}
+
+@media (max-width: 600px) {
+  .audio_link {
+    padding: 6px 11px
+  }
+}
+
+@media (max-width: 360px) {
+  .audio_link {
+    padding: 6px 4px;
+    margin-left: 8px
+  }
+}

@@ -1,0 +1,33 @@
+.Button {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 4px;
+  border: 1px solid gray;
+  color: black;
+  margin-right: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+  &:focus {
+    outline: none;
+  }
+  &:active {
+    -webkit-box-shadow: inset 2px 2px 1px rgba(0, 0, 0, .3);
+    -moz-box-shadow: inset 2px 2px 1px rgba(0, 0, 0, .3);
+    box-shadow: inset 2px 2px 1px rgba(0, 0, 0, .3);
+  }
+  &:disabled {
+    background: gray;
+    color: black;
+    cursor: not-allowed;
+  }
+  &.error {
+    color: rgb(240, 87, 108);
+  }
+  &.success {
+    color: rgb(161, 240, 69);
+  }
+  &.primary {
+    background: blue;
+  }
+}
